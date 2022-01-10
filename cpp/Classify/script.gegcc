@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Experiment 1:
+
+
+# Command line arguments can be provided when you run this script:
+# 	'e' is for specifying number of experiments. It will create that many subscripted 'exp' folders
+#	'r' is for specifying number of runs. It will create that many subscripted 'stat' files in each exp folder
+#	'p' is for specifying the population size.
+#	'g' is for specifying number of generations
+#	'i' is for specifying increment across each experiment
+# The command below is an example run of the script:
+#	./script.gegcc -e 5 -r 30 -p 200
+# The above command will initiate a GE run for 5 experiments, 30 runs in each, with the population size of 200 individuals
+
+# If you don't provide any of the command line argument, the following variable values will be set by default
+noe=5		# number of experiments
+nor=30		# number of runs
+popsize=100	# population size
+ngens=10	# number of generations
+inc=20		# increment across experiments
+
+while getopts "e:r:p:g:i:" option; do
+	case ${option} in
+		e) noe=${OPTARG};;
+		r) nor=${OPTARG};;
+		p) popsize=${OPTARG};;
+		g) ngens=${OPTARG};;
+		i) inc=${OPTARG};;
+	esac
+done
+
+
+# Uncomment/modify appropriate lines in the code below as per your requirement
+
+for (( exp=1 ; exp<=noe ; exp=${exp}+1 )) do
+	mkdir -p Experiments/exp${exp}  # Creates the directory if it doesn't exist
+	#let ngens=$(($exp*$inc))	# varies number of generations across experiments
+	let popsize=$(($exp*$inc))	# varies population size across experiments
+	for (( run=1 ; run<=nor ; run=${run}+1 )) do
+		./GEGCC ${popsize} ngen ${ngens} sensible 1 effective 1	# run GE with the given parameters
+		mv stats Experiments/exp${exp}/stats${run}		# move stat files to 'exp_' directory
+	done
+done
