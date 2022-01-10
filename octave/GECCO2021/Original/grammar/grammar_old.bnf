@@ -1,0 +1,22 @@
+<expression> ::= "\texpression = '" <term> "';" 
+
+<term> ::= <constant>"*"<input>"*"<output>"+"<noise> | <constant>"*"<input>"*"<output>"+"<noise>"+"<term>
+
+<input> ::= "x(k -" <delay> ")" <nonlinearity>
+<output> ::= "y(k -" <order> ")" <nonlinearity>
+<noise> ::= "0" | "w(k - " <delay> ")"
+
+<constant> ::= <pos> | <neg>
+<pos> ::= "0."<digit><digit><digit><digit>
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" 
+<neg> ::= "-"<pos>
+
+<nonlinearity> ::= "*1" | "^"<digit> | "*"<input> | "*"<output>  
+
+<delay> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20"
+
+<order> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20"
+
+
+
+

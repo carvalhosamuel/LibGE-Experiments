@@ -1,0 +1,114 @@
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+ans = Saving test results
+Random Seed: 2848591040
+Generations: 1 Best individual:
+	expression = '5.428*y(k-1) + -1.804 *y(k-24) ';
+ans = Saving test results
+Genotype =  194 195 224 82 228 236 21 161 88 0 14 246
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+2 Best individual:
+	expression = '-0.179*y(k-1) + -0.996 *y(k-32) ';
+ans = Saving test results
+Genotype =  137 130 111 177 49 132 131 100 39 229 16 83 225 84 55 141 77 198 69 226 63 22 28 48 95 237 250 211 53 210 150 69 140 95 22 157 146 38 77 154 206 199 54 180 80 143 74 25 131 57 126 113 166 23 46 131 254 129 151 46 55 85 81 188 113 35 131 51 214 99 11 49 95 203 247 90 201 112 0 18 84 58 230 130 43 151 209 89 27 71 39 62 137 48 225 231 141 145 49 182 208 91 14 79 14 91 243 62 188 210 199 185 235 73 155 227 243 77 16 210 223 78 105 209 217 238 223 37 140 231 236 219 253 98 60 227 9 26 168 182 116 115 227 184 62 235 72 34 88 237 104 97 13 210 62 86 180 129 206 183 210 243 66 104 174 221 167 120 56 218 100 85 251 189 44 24 152 230 108 50 214 160 248 78 235 71 115 3 18 78 209 175 227 82 230 167 152 61 232 180 231 27 67 42 133 112 177 97 217 81 49 188 71 5 229 195 140 134 229 225 86 70 5 80 190 72 223 103 234 215 225 142 195 123 7 210 223 32 207 228 156 49 237 32 122 152 176 133 4 112 31 61 155 182 155 109 151 60 186 58 180 161 188 136 251 174 102 180 148 132 196 188 49 246 251 137 37 145 165 191 56 199 175 158 31 41 44 143 202 130 222 69 196 77 138 69 29 214 125 221 150 253 5 90 209 4 180 31 1 212 81 211 206
+Total length     = 313
+Effective length = 12
+Wrapping events = 0
+3 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+4 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+5 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+6 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+7 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+8 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+9 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+ans = Saving test results
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+10 Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+
+10	# current generation
+0	# current convergence
+100	# number of selections since initialization
+52	# number of crossovers since initialization
+17172	# number of mutations since initialization
+100	# number of replacements since initialization
+100	# number of genome evaluations since initialization
+11	# number of population evaluations since initialization
+0.419131	# maximum score since initialization
+0.00010001	# minimum score since initialization
+0.125184	# average of all scores ('on-line' performance)
+0.362598	# average of maximum scores ('off-line' performance)
+0.0406351	# average of minimum scores ('off-line' performance)
+
+0.0115963	# mean score in initial population
+0.115062	# maximum score in initial population
+0.00010001	# minimum score in initial population
+0.0363543	# standard deviation of initial population
+235.667	# diversity of initial population (0=identical,-1=unset)
+
+0.164149	# mean score in current population
+0.419131	# maximum score in current population
+0.0954577	# minimum score in current population
+0.0930454	# standard deviation of current population
+109.622	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+	expression = '-1.094*y(k-1) + 2.253 *y(k-47) ';
+Genotype =  199 251 100 9 164 236 24 192 82 195 13 254
+Total length     = 12
+Effective length = 12
+Wrapping events = 0
+Time taken: 0:0:39 -> 0 hours, 0 minutes, 39 seconds.
+39.0908

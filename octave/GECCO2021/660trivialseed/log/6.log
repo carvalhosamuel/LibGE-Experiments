@@ -1,0 +1,944 @@
+Using libGE version 0.32.0
+Using random initialisation.
+Using one point crossover.
+Random Seed: 2754895518
+Generations: 1 Best individual:
+	expression = '0.433*y(k-1) + 2.667 *y(k-78) + -1.578 *y(k-30) ';
+Genotype =  48 50 84 93 13 142 164 212 86 246 187 197 40 67 11 135 17 158 208 204 33 223 251 38 140 17 102 168 213 154 73 246 14 14 132 249 215 37 105 129 7 74 199
+Total length     = 43
+Effective length = 19
+Wrapping events = 0
+2 Best individual:
+	expression = '0.614*y(k-1) + 7.041 *y(k-85) + -7.606 *y(k-85) + -0.704 *y(k-85) ';
+Genotype =  166 10 246 241 44 21 0 217 220 224 141 156 234 147 227
+Total length     = 15
+Effective length = 26
+Wrapping events = 1
+3 Best individual:
+	expression = '0.614*y(k-1) + 7.041 *y(k-85) + -7.606 *y(k-85) + -0.704 *y(k-85) ';
+Genotype =  166 10 246 241 44 21 0 217 220 224 141 156 234 147 227
+Total length     = 15
+Effective length = 26
+Wrapping events = 1
+4 Best individual:
+	expression = '0.614*y(k-1) + 7.041 *y(k-85) + -7.606 *y(k-85) + -0.704 *y(k-85) ';
+Genotype =  166 10 246 241 44 21 0 217 220 224 141 156 234 147 227
+Total length     = 15
+Effective length = 26
+Wrapping events = 1
+5 Best individual:
+	expression = '0.614*y(k-1) + 7.041 *y(k-85) + -7.606 *y(k-85) + -0.704 *y(k-85) ';
+Genotype =  166 10 246 241 44 21 0 217 220 224 141 156 234 147 227
+Total length     = 15
+Effective length = 26
+Wrapping events = 1
+6 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+7 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+8 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+9 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+10 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+11 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+12 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+13 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+14 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+15 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+16 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+17 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+18 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+19 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+20 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+21 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+22 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+23 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+24 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+25 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+26 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+27 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+28 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+29 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+30 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+31 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+32 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+33 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+34 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+35 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+36 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+37 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+38 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+39 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+40 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+41 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+42 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+43 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+44 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+45 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+46 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+47 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+48 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+49 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+50 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+51 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+52 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+53 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+54 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+55 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+56 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+57 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+58 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+59 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+60 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+61 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+62 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+63 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+64 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+65 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+66 Best individual:
+	expression = '1.101*y(k-1) + -0.093 *y(k-78) ';
+Genotype =  242 61 221 240 101 196 29 60 20 179 143 197 149 142 89 208 137 90 209 49 246 105 250 130 43 55 91 207 239 84 34 57 121 245 236 25 78
+Total length     = 37
+Effective length = 12
+Wrapping events = 0
+67 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+68 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+69 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+70 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+71 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+72 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+73 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+74 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+75 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+76 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+77 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+78 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+79 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+80 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+81 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+82 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+83 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+84 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+85 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+86 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+87 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+88 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+89 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+90 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+91 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+92 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+93 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+94 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+95 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+96 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+97 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+98 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+99 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+100 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+101 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+102 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+103 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+104 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+105 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+106 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+107 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+108 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+109 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+110 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+111 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+112 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+113 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+114 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+115 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+116 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+117 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+118 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+119 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+120 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+121 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+122 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+123 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+124 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+125 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+126 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+127 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+128 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+129 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+130 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+131 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+132 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+133 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+134 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+135 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+136 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+137 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+138 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+139 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+140 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+141 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+142 Best individual:
+	expression = '0.836*y(k-1) + 0.027 *y(k-78) ';
+Genotype =  226 160 28 103 66 152 72 150 20 142 117 17 63 21 136 124 66 230 188 72 13
+Total length     = 21
+Effective length = 12
+Wrapping events = 0
+143 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+144 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+145 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+146 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+147 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+148 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+149 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+150 Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+
+150	# current generation
+0.996062	# current convergence
+15000	# number of selections since initialization
+13496	# number of crossovers since initialization
+2178769	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+0.871214	# maximum score since initialization
+0.00010001	# minimum score since initialization
+0.389714	# average of all scores ('on-line' performance)
+0.814086	# average of maximum scores ('off-line' performance)
+0.249508	# average of minimum scores ('off-line' performance)
+
+0.00433804	# mean score in initial population
+0.221494	# maximum score in initial population
+0.00010001	# minimum score in initial population
+0.0298462	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+0.616689	# mean score in current population
+0.871214	# maximum score in current population
+0.439253	# minimum score in current population
+0.141239	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+	expression = '0.735*y(k-1) + 0.073 *y(k-44) ';
+Genotype =  100 20 127 183 245 32 22
+Total length     = 7
+Effective length = 12
+Wrapping events = 1
+Time taken: 2:10:18 -> 2 hours, 10 minutes, 18 seconds.
+7818.81

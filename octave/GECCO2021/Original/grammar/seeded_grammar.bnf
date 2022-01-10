@@ -1,0 +1,23 @@
+<expression> ::= "\texpression = '" <block> "+" <noise> "';" 
+
+<block> ::= <term> | <term> "+" <term>
+<term> ::= <input> | <output> | <interaction>
+
+<input> ::= <constant> "*x(k)" <nonlinearity> | <constant> "*x(k-" <delay> ")" <nonlinearity>
+<output> ::= <constant> "*y(k-" <order> ")" <nonlinearity>
+<interaction> ::= <input> "*" <output>
+<noise> ::= "0" | "w(k-" <delay> ")"
+
+<constant> ::= <pos> | <neg>
+<pos> ::= "0." <digit> <digit> <digit> <digit>
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" 
+<neg> ::= "-" <pos>
+
+<nonlinearity> ::= <linear> | <nonlinear>
+<linear> ::= " " 
+<nonlinear> ::= "^" <digit> 
+
+<delay> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" 
+<order> ::= <seed> | <random>
+<random> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10"
+<seed> ::= "1" | "4" | "9" | "13" | "18"

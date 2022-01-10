@@ -1,0 +1,2 @@
+function [expression] = individual_48()
+	expression = '0.058*y(k-1) + 0.058 *y(k-78) ';

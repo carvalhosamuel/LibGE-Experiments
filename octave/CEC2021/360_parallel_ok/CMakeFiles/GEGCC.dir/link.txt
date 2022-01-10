@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -O2   CMakeFiles/GEGCC.dir/src/main.cpp.o CMakeFiles/GEGCC.dir/src/initfunc.cpp.o CMakeFiles/GEGCC.dir/src/generate_individual.cpp.o CMakeFiles/GEGCC.dir/src/evaluator.cpp.o  -o GEGCC  -L/usr/local/lib/libga.a  -L/usr/local/lib/libGE.a -Wl,-rpath,/usr/local/lib/libga.a:/usr/local/lib/libGE.a /usr/local/lib/libga.a /usr/local/lib/libGE.a -lstdc++fs 
