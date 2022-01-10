@@ -1,0 +1,2395 @@
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Random Seed: 1980097028
+Generations: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 
+250	# current generation
+1	# current convergence
+1500	# number of selections since initialization
+983	# number of crossovers since initialization
+142374	# number of mutations since initialization
+1250	# number of replacements since initialization
+1250	# number of genome evaluations since initialization
+251	# number of population evaluations since initialization
+55	# maximum score since initialization
+34	# minimum score since initialization
+54.2688	# average of all scores ('on-line' performance)
+54.596	# average of maximum scores ('off-line' performance)
+53.904	# average of minimum scores ('off-line' performance)
+
+41.9	# mean score in initial population
+51	# maximum score in initial population
+34	# minimum score in initial population
+5.85852	# standard deviation of initial population
+175.622	# diversity of initial population (0=identical,-1=unset)
+
+55	# mean score in current population
+55	# maximum score in current population
+55	# minimum score in current population
+0	# standard deviation of current population
+68.5111	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r0  &=  b0 ;
+ 	 r2 = ! a0 ;
+ 	 r3 = ! r2 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  156 177 48 133 170 102 225 198 23 184 227 240 219 151 210 118 41 163 251 129 85 74 15 249 139 78 43 169 157 194 200 150 56 184 113 126 58 200 201 51 96 155 110 115 163 52 178 25 16 197 153 240 129 133 153 122 152 40 121 41 144 95 180 6 150 182 101 150 20 54 124 144 224 220 177 239 154 242 199 198 31 158 110 73 174 223 204 147 208 82 232 95 124 221 190 101 174 46 216 26 139 162 196 199 145 200 252 60 99 231 182 72 210 59 80 170 20 5 82 217 160 192 117 68 53 189 94 248 221 97 75 198 12 43 26 182 20 97 1 199 177 243 234 224 100 64 20 239 196 55
+Total length     = 150
+Effective length = 15
+Wrapping events = 0
+Time taken: 0:2:6 -> 0 hours, 2 minutes, 6 seconds.
+126.053
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Random Seed: 3441669544
+Generations: Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 42 at position 5
+Swapping 38 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+1 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 5
+Swapping 36 at position 6
+Swapping 42 at position 7
+Swapping 36 at position 8
+Swapping 38 at position 10
+Swapping 33 at position 11
+Swapping 40 at position 13
+2 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 1
+Swapping 38 at position 4
+Swapping 36 at position 5
+Swapping 38 at position 6
+Swapping 36 at position 8
+Swapping 36 at position 10
+Swapping 38 at position 12
+3 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 3
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 8
+4 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 33 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 5
+Swapping 38 at position 6
+Swapping 36 at position 8
+5 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 38 at position 3
+Swapping 33 at position 4
+Swapping 36 at position 5
+Swapping 38 at position 8
+6 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 33 at position 7
+7 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 2
+Swapping 36 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 7
+Swapping 34 at position 10
+Swapping 34 at position 12
+Swapping 34 at position 13
+8 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 4
+Swapping 34 at position 6
+Swapping 36 at position 7
+Swapping 33 at position 8
+9 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 33 at position 1
+Swapping 34 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 34 at position 8
+10 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 33 at position 3
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+11 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 8
+12 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 2
+Swapping 36 at position 3
+Swapping 33 at position 4
+Swapping 34 at position 7
+Swapping 36 at position 8
+13 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 34 at position 4
+Swapping 34 at position 6
+Swapping 33 at position 7
+14 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 33 at position 6
+Swapping 34 at position 7
+Swapping 34 at position 8
+15 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 4
+Swapping 34 at position 6
+Swapping 36 at position 7
+Swapping 33 at position 8
+16 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 33 at position 1
+Swapping 34 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 34 at position 8
+17 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 33 at position 3
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+18 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 8
+19 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 2
+Swapping 36 at position 3
+Swapping 33 at position 4
+Swapping 34 at position 7
+Swapping 36 at position 8
+20 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 34 at position 4
+Swapping 34 at position 6
+Swapping 33 at position 7
+21 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 33 at position 6
+Swapping 34 at position 7
+Swapping 34 at position 8
+22 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 33 at position 5
+Swapping 34 at position 6
+Swapping 34 at position 9
+Swapping 36 at position 10
+23 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+24 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 33 at position 6
+Swapping 34 at position 8
+25 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 3
+Swapping 34 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+26 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 33 at position 6
+Swapping 34 at position 9
+27 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 4
+Swapping 34 at position 6
+Swapping 34 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+28 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 33 at position 6
+Swapping 34 at position 7
+Swapping 36 at position 11
+29 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 34 at position 4
+Swapping 34 at position 5
+Swapping 36 at position 6
+Swapping 34 at position 8
+30 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 2
+Swapping 34 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 7
+Swapping 33 at position 8
+31 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 1
+Swapping 34 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 34 at position 7
+Swapping 36 at position 10
+32 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 34 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 7
+Swapping 34 at position 8
+33 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 34 at position 7
+34 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 2
+Swapping 34 at position 3
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+35 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 2
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 34 at position 8
+36 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 3
+Swapping 34 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 7
+Swapping 36 at position 8
+37 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 8
+Swapping 36 at position 9
+38 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 34 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 7
+Swapping 34 at position 8
+39 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 2
+Swapping 34 at position 3
+Swapping 36 at position 5
+Swapping 36 at position 7
+Swapping 36 at position 9
+40 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 4
+Swapping 34 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 8
+Swapping 34 at position 9
+41 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 33 at position 2
+Swapping 36 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 10
+42 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 34 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 7
+43 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 5
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+44 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 34 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 8
+45 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 3
+Swapping 36 at position 5
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+46 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 34 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 9
+47 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 33 at position 2
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+Swapping 36 at position 10
+48 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 34 at position 5
+Swapping 33 at position 6
+Swapping 36 at position 13
+49 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+50 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 8
+51 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 3
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+52 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 9
+53 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+54 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 7
+55 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+56 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 8
+57 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 3
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+58 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 9
+59 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 4
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+60 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 7
+61 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 1
+Swapping 34 at position 2
+Swapping 33 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 36 at position 7
+62 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 33 at position 3
+Swapping 33 at position 4
+Swapping 34 at position 5
+Swapping 34 at position 6
+Swapping 36 at position 7
+63 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 34 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 36 at position 7
+64 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 33 at position 1
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+Swapping 34 at position 7
+65 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 36 at position 6
+Swapping 34 at position 7
+Swapping 38 at position 11
+Swapping 38 at position 12
+66 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 33 at position 4
+Swapping 33 at position 5
+Swapping 36 at position 6
+Swapping 34 at position 8
+67 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 34 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 7
+68 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 33 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+69 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 1
+Swapping 33 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 7
+Swapping 34 at position 11
+Swapping 34 at position 12
+70 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 2
+Swapping 33 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 6
+71 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 6
+Swapping 34 at position 7
+72 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 33 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 5
+Swapping 34 at position 6
+Swapping 36 at position 7
+73 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 36 at position 1
+Swapping 33 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 36 at position 5
+Swapping 34 at position 10
+74 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 33 at position 4
+Swapping 34 at position 7
+Swapping 34 at position 10
+Swapping 34 at position 11
+75 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 33 at position 6
+Swapping 34 at position 7
+76 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 7
+77 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 33 at position 5
+Swapping 34 at position 7
+78 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 33 at position 4
+Swapping 34 at position 5
+Swapping 34 at position 6
+79 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 33 at position 6
+Swapping 34 at position 7
+80 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 5
+Swapping 34 at position 6
+Swapping 33 at position 7
+81 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 33 at position 5
+Swapping 34 at position 7
+82 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 33 at position 5
+Swapping 34 at position 6
+Swapping 34 at position 7
+83 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 2
+Swapping 34 at position 4
+Swapping 33 at position 5
+Swapping 34 at position 6
+Swapping 34 at position 7
+Swapping 34 at position 8
+84 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 33 at position 5
+Swapping 34 at position 6
+Swapping 34 at position 8
+Swapping 34 at position 9
+85 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 33 at position 1
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 34 at position 6
+Swapping 34 at position 8
+Swapping 34 at position 9
+86 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 2
+Swapping 34 at position 4
+Swapping 34 at position 5
+Swapping 34 at position 7
+Swapping 33 at position 8
+Swapping 34 at position 9
+Swapping 34 at position 13
+87 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 3
+Swapping 33 at position 4
+Swapping 34 at position 6
+Swapping 34 at position 7
+Swapping 34 at position 10
+88 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 5
+Swapping 33 at position 7
+Swapping 34 at position 8
+Swapping 34 at position 9
+89 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 1
+Swapping 33 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 34 at position 5
+Swapping 34 at position 8
+Swapping 34 at position 9
+90 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 4
+Swapping 33 at position 6
+Swapping 34 at position 7
+Swapping 34 at position 8
+Swapping 34 at position 9
+Swapping 36 at position 12
+91 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 2
+Swapping 34 at position 4
+Swapping 36 at position 7
+Swapping 34 at position 8
+Swapping 34 at position 9
+Swapping 46 at position 10
+Swapping 46 at position 11
+92 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 4
+Swapping 33 at position 5
+Swapping 34 at position 9
+Swapping 44 at position 10
+Swapping 44 at position 11
+Swapping 44 at position 12
+Swapping 38 at position 13
+93 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 33 at position 2
+Swapping 36 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 11
+Swapping 42 at position 12
+94 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 33 at position 5
+Swapping 38 at position 8
+Swapping 44 at position 9
+Swapping 44 at position 10
+95 Percentile from file: 0.5
+sloth! 0.5
+Swapping 33 at position 0
+Swapping 44 at position 1
+Swapping 38 at position 4
+Swapping 42 at position 5
+Swapping 36 at position 9
+Swapping 44 at position 10
+Swapping 36 at position 11
+96 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 36 at position 1
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 7
+Swapping 33 at position 8
+Swapping 38 at position 9
+97 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 3
+Swapping 33 at position 4
+Swapping 42 at position 5
+Swapping 36 at position 8
+Swapping 44 at position 9
+Swapping 40 at position 10
+Swapping 36 at position 11
+98 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 36 at position 1
+Swapping 40 at position 7
+Swapping 33 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 11
+Swapping 38 at position 12
+99 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 3
+Swapping 40 at position 4
+Swapping 38 at position 7
+Swapping 42 at position 8
+Swapping 42 at position 9
+Swapping 44 at position 10
+Swapping 44 at position 11
+100 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 36 at position 6
+Swapping 44 at position 7
+Swapping 40 at position 9
+Swapping 38 at position 11
+Swapping 42 at position 12
+101 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 38 at position 7
+Swapping 38 at position 9
+Swapping 40 at position 10
+Swapping 40 at position 11
+102 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 36 at position 7
+Swapping 38 at position 10
+Swapping 30 at position 11
+103 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 30 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 9
+104 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 36 at position 5
+Swapping 30 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 8
+105 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 4
+Swapping 36 at position 5
+Swapping 30 at position 6
+Swapping 38 at position 8
+Swapping 38 at position 9
+106 Percentile from file: 0.5
+sloth! 0.5
+Swapping 30 at position 0
+Swapping 36 at position 1
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 7
+Swapping 38 at position 8
+107 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 36 at position 5
+Swapping 30 at position 6
+Swapping 30 at position 7
+Swapping 38 at position 9
+108 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 30 at position 2
+Swapping 30 at position 3
+Swapping 38 at position 6
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+109 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 2
+Swapping 30 at position 5
+Swapping 30 at position 6
+Swapping 38 at position 7
+Swapping 36 at position 8
+Swapping 44 at position 10
+Swapping 44 at position 11
+110 Percentile from file: 0.5
+sloth! 0.5
+Swapping 30 at position 0
+Swapping 30 at position 1
+Swapping 30 at position 2
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 36 at position 12
+Swapping 36 at position 13
+111 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 36 at position 7
+Swapping 30 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 11
+112 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 36 at position 4
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 10
+Swapping 38 at position 11
+113 Percentile from file: 0.5
+sloth! 0.5
+Swapping 51 at position 0
+Swapping 38 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+114 Percentile from file: 0.5
+sloth! 0.5
+Swapping 51 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 38 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+115 Percentile from file: 0.5
+sloth! 0.5
+Swapping 51 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+116 Percentile from file: 0.5
+sloth! 0.5
+Swapping 51 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+117 Percentile from file: 0.5
+sloth! 0.5
+Swapping 51 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+118 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 42 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+119 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 42 at position 1
+Swapping 42 at position 2
+Swapping 42 at position 3
+Swapping 42 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+120 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+121 Percentile from file: 0.5
+sloth! 0.5
+Swapping 40 at position 0
+Swapping 40 at position 1
+Swapping 40 at position 2
+Swapping 40 at position 3
+Swapping 40 at position 4
+Swapping 40 at position 5
+Swapping 38 at position 11
+122 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 38 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+123 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 42 at position 1
+Swapping 42 at position 2
+Swapping 42 at position 3
+Swapping 42 at position 4
+Swapping 42 at position 5
+Swapping 38 at position 8
+124 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+125 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 38 at position 7
+126 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+127 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+128 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+129 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+130 Percentile from file: 0.5
+sloth! 0.5
+Swapping 45 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+131 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 42 at position 1
+Swapping 42 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+132 Percentile from file: 0.5
+sloth! 0.5
+Swapping 50 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+133 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+134 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+135 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+136 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 38 at position 10
+137 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+138 Percentile from file: 0.5
+sloth! 0.5
+Swapping 51 at position 0
+Swapping 51 at position 1
+Swapping 51 at position 2
+Swapping 51 at position 3
+Swapping 51 at position 4
+Swapping 51 at position 5
+Swapping 51 at position 6
+139 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+140 Percentile from file: 0.5
+sloth! 0.5
+Swapping 43 at position 0
+Swapping 43 at position 1
+Swapping 43 at position 2
+Swapping 43 at position 3
+Swapping 43 at position 4
+Swapping 43 at position 5
+Swapping 43 at position 6
+141 Percentile from file: 0.5
+sloth! 0.5
+Swapping 43 at position 0
+Swapping 43 at position 1
+Swapping 43 at position 2
+Swapping 43 at position 3
+Swapping 43 at position 4
+Swapping 43 at position 5
+Swapping 43 at position 6
+142 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+143 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 11
+144 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 34 at position 2
+Swapping 34 at position 3
+Swapping 34 at position 4
+Swapping 34 at position 5
+Swapping 38 at position 6
+145 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+146 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+147 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+148 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 36 at position 10
+Swapping 36 at position 11
+Swapping 36 at position 12
+149 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 1
+Swapping 36 at position 2
+Swapping 36 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 8
+Swapping 38 at position 9
+150 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 36 at position 6
+Swapping 38 at position 9
+Swapping 34 at position 10
+Swapping 34 at position 11
+151 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 36 at position 6
+Swapping 34 at position 7
+Swapping 42 at position 13
+152 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 42 at position 1
+Swapping 42 at position 2
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 38 at position 10
+Swapping 38 at position 11
+153 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+154 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+155 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+156 Percentile from file: 0.5
+sloth! 0.5
+Swapping 34 at position 0
+Swapping 34 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+157 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+158 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+159 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+160 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+161 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+162 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+163 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+164 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+165 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+166 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+167 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+168 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+169 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+170 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 8
+171 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+172 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+173 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+174 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+175 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+176 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+177 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+178 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+179 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+180 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+181 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 8
+182 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 8
+Swapping 44 at position 9
+183 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 2
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 8
+184 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 10
+185 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+186 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 7
+187 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+188 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 6
+Swapping 44 at position 7
+189 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+190 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 7
+191 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+192 Percentile from file: 0.5
+sloth! 0.5
+Swapping 36 at position 0
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 7
+Swapping 44 at position 8
+193 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+194 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 8
+Swapping 44 at position 10
+195 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 7
+Swapping 44 at position 8
+196 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 1
+Swapping 44 at position 2
+Swapping 44 at position 3
+Swapping 44 at position 5
+Swapping 44 at position 6
+Swapping 44 at position 8
+Swapping 44 at position 9
+197 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 1
+Swapping 44 at position 3
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 8
+Swapping 44 at position 9
+198 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 4
+Swapping 44 at position 5
+Swapping 44 at position 7
+Swapping 44 at position 8
+Swapping 44 at position 9
+Swapping 44 at position 10
+199 Percentile from file: 0.5
+sloth! 0.5
+Swapping 44 at position 0
+Swapping 44 at position 4
+Swapping 44 at position 7
+Swapping 44 at position 8
+Swapping 44 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 12
+200 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 50 at position 2
+Swapping 50 at position 3
+Swapping 50 at position 4
+Swapping 50 at position 5
+Swapping 50 at position 6
+201 Percentile from file: 0.5
+sloth! 0.5
+Swapping 50 at position 0
+Swapping 50 at position 1
+Swapping 50 at position 2
+Swapping 50 at position 3
+Swapping 50 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+202 Percentile from file: 0.5
+sloth! 0.5
+Swapping 50 at position 0
+Swapping 50 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 50 at position 4
+Swapping 50 at position 5
+Swapping 50 at position 6
+203 Percentile from file: 0.5
+sloth! 0.5
+Swapping 48 at position 0
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 10
+Swapping 38 at position 11
+Swapping 42 at position 12
+Swapping 38 at position 13
+204 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 4
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 10
+205 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 40 at position 10
+Swapping 38 at position 11
+206 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 4
+Swapping 40 at position 7
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 12
+207 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+208 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 9
+209 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 9
+Swapping 38 at position 13
+210 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 12
+211 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+212 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 36 at position 12
+213 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 1
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 9
+Swapping 36 at position 10
+214 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 5
+Swapping 38 at position 7
+Swapping 36 at position 8
+Swapping 36 at position 9
+215 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 36 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 8
+216 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 1
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 8
+Swapping 36 at position 9
+Swapping 34 at position 10
+217 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 36 at position 3
+Swapping 36 at position 4
+Swapping 38 at position 6
+Swapping 34 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 12
+218 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 34 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 36 at position 9
+Swapping 38 at position 12
+219 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 34 at position 9
+Swapping 34 at position 10
+220 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 42 at position 10
+221 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 42 at position 7
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 42 at position 11
+222 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 2
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 38 at position 11
+Swapping 38 at position 12
+Swapping 38 at position 13
+223 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 8
+Swapping 38 at position 9
+224 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 9
+225 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 2
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 11
+Swapping 42 at position 12
+226 Percentile from file: 0.5
+sloth! 0.5
+Swapping 42 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 5
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+Swapping 38 at position 11
+227 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 42 at position 8
+Swapping 42 at position 11
+Swapping 30 at position 12
+228 Percentile from file: 0.5
+sloth! 0.5
+Swapping 30 at position 0
+Swapping 30 at position 1
+Swapping 38 at position 4
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 42 at position 9
+229 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 3
+Swapping 30 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 10
+Swapping 38 at position 11
+Swapping 38 at position 12
+230 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 1
+Swapping 30 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 9
+231 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 30 at position 8
+Swapping 30 at position 9
+232 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 38 at position 8
+Swapping 30 at position 9
+233 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 30 at position 4
+Swapping 38 at position 6
+Swapping 38 at position 7
+234 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 2
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 30 at position 7
+Swapping 30 at position 8
+Swapping 38 at position 9
+235 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 30 at position 2
+Swapping 30 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 6
+Swapping 38 at position 7
+236 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+Swapping 30 at position 8
+Swapping 30 at position 9
+Swapping 38 at position 11
+237 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 30 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+238 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 30 at position 7
+Swapping 38 at position 8
+239 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 30 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 6
+Swapping 38 at position 11
+Swapping 44 at position 12
+240 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 30 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 8
+Swapping 38 at position 9
+Swapping 38 at position 10
+241 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 30 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 7
+242 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 30 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+243 Percentile from file: 0.5
+sloth! 0.5
+Swapping 30 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 6
+Swapping 38 at position 7
+244 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 30 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+245 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 30 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 7
+246 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 30 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 6
+247 Percentile from file: 0.5
+sloth! 0.5
+Swapping 30 at position 0
+Swapping 38 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 6
+Swapping 38 at position 7
+248 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 30 at position 1
+Swapping 38 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 5
+Swapping 38 at position 6
+Swapping 38 at position 7
+249 Percentile from file: 0.5
+sloth! 0.5
+Swapping 38 at position 0
+Swapping 38 at position 1
+Swapping 30 at position 2
+Swapping 38 at position 3
+Swapping 38 at position 4
+Swapping 38 at position 5
+Swapping 38 at position 7
+250 
+250	# current generation
+1	# current convergence
+1500	# number of selections since initialization
+978	# number of crossovers since initialization
+57163	# number of mutations since initialization
+1250	# number of replacements since initialization
+1249	# number of genome evaluations since initialization
+251	# number of population evaluations since initialization
+51	# maximum score since initialization
+34	# minimum score since initialization
+49.37	# average of all scores ('on-line' performance)
+49.528	# average of maximum scores ('off-line' performance)
+48.564	# average of minimum scores ('off-line' performance)
+
+41.9	# mean score in initial population
+51	# maximum score in initial population
+34	# minimum score in initial population
+5.85852	# standard deviation of initial population
+175.622	# diversity of initial population (0=identical,-1=unset)
+
+49.2	# mean score in current population
+50	# maximum score in current population
+46	# minimum score in current population
+1.68655	# standard deviation of current population
+13.8	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r3  |=  r1 ;
+ 	 r1  &=  b0 ;
+ 	 r0  ^=  b0 ;
+ 	 r0  ^=  r0 ;
+ 	 r3  ^=  r2 ;
+ 	 r0  |=  a0 ;
+ 	 r0 = ! r2 ;
+ 	 r2  |=  r1 ;
+ 	 r3 = ! r3 ;
+ 	 r2  |=  r3 ;
+ 	 r2  ^=  a1 ;
+ 	 r0 = ! b1 ;
+ 	 r2  |=  b1 ;
+ 	 r2  &=  a0 ;
+ 	 r1  ^=  a1 ;
+ 	 r1  &=  r3 ;
+ 	 r2  ^=  r1 ;
+ 	 r2  ^=  r2 ;
+ 	 r2  &=  b0 ;
+ 	 r2 = ! a1 ;
+ 	 r0 = ! b1 ;
+ 	 r3 = ! r3 ;
+ 	 r1  |=  b1 ;
+ 	 r0  ^=  r2 ;
+ 	 r1  |=  r1 ;
+ 	 r1  &=  b0 ;
+ 	 r1  &=  r1 ;
+ 	 r1 = ! b0 ;
+ 	 r0  ^=  b1 ;
+ 	 r3  &=  r3 ;
+ 	 r0 = ! a0 ;
+ 	 r0  &=  b0 ;
+ 	 r2  &=  a1 ;
+ 	 r0  |=  b1 ;
+ 	 r1  &=  b0 ;
+ 	 r1  |=  a0 ;
+ 	 r1  |=  r2 ;
+ 	 r1  &=  r2 ;
+ 	 r2  ^=  b0 ;
+ 	 r3  |=  r0 ;
+ 	 r0  &=  b0 ;
+ 	 r2 = ! a0 ;
+ 	 r1 = ! b0 ;
+ 	 r1 = ! b1 ;
+ 	 r3  ^=  b1 ;
+ 	 r3 = ! r1 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  42 222 83 224 173 148 219 233 205 230 54 233 220 110 70 78 56 68 106 228 32 192 235 98 94 58 63 184 196 184 240 132 60 187 242 192 34 18 48 205 190 40 51 31 15 18 234 46 96 207 140 115 26 190 249 222 159 188 235 211 188 249 126 208 19 62 59 78 57 156 164 247 137 30 149 114 214 1 149 59 122 76 46 10 173 160 46 158 82 50 172 65 22 221 22 90 151 74 75 45 0 85 108 231 179 174 196 231 51 139 228 221 145 68 127 214 72 172 34 126 182 56 29 88 233 158 207 85 165 66 18 164 73 21 233 66 193 37 159 54 108 101 80 162 87 34 0 195 29 183 114 179 116 23 96 166 33 12 197 110 148 135 90 221 41 132 151 208 24 43 56 73 221 205 10 196 213 53 152 168 182 100 109 96 38 2 96 185 161 230 204 79 2 214 162 100 182 171 8 172 156 145 0 65 218 86 223 78 47 124 170 49 177 139 234 234 237 137 203 151 252 83 151 190 203 153 42 219 167 153
+Total length     = 230
+Effective length = 230
+Wrapping events = 0
+Time taken: 0:2:14 -> 0 hours, 2 minutes, 14 seconds.
+134.631

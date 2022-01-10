@@ -1,0 +1,31 @@
+<statement>		::= "case(bcd)\n"<switch-case><default-case>"\nendcase"
+	# <statement>.i_allowedBCDValues  					//pre-initialised vector of allowed items. At the start every item is allowed.
+	# <switch-case>.i_usedValues = {False};		 		//inherited; boolean vector. Flags the values used thus far. Set to all false at this stage.
+	# <switch-case>.i_validProductionIndices = {True}; 	//inherited; boolean vector. At this stage, both the rules for <switch-case> are valid. 
+	
+<switch-case>	::= "\t"<bcd-value>": seg \<= "<seg-value>";\n" | "\t"<bcd-value>": seg \<= "<seg-value>";\n" <switch-case>
+	# Notation: 
+	#	<switch-case>1 is the first <switch-case> starting from left; <switch-case>2 is the second. The same convention applies to <bcd-value>s
+	#	
+	# <bcd-value>.i_validProductionIndices = f(<switch-case>1.i_usedValues)      			//(applies to both <I>1 and <I>2). f implies: a function of the argument. Based on past choices, decide which items are still valid.
+	# <bcd-value>.s_value = -1					  										//synthesised: (applies to both <I>1 and <I>2). -1 is a default value in the constructor to <I> outside the range of valid items. 
+	# <switch-case>2.i_usedValues = <switch-case>1.i_usedValues + <bcd-value>2.s_value 	//<K>2 inherits a list of used items from top node and left sibling, and then combines the two.
+	# <switch-case>2.i_validProductionIndices = f(<switch-case>2.i_usedValues)       			//f implies: a function of the argument. Decides whether production <I> or also <I><K> is still valid. 
+
+<default-case>  ::= "\tdefault: seg <= "<seg-value>";"
+	# No information needs to be passed
+	
+<bcd-value>		::= "4'b"<bit><bit><bit><bit>
+	# Notation: 
+	# <bit>1 is the first <bit> starting from left; <bit>2 is the second
+	# Note that all values must be unique
+	
+	# <bcd-value>.s_value = (<bit>.value << 3) + (<bit>.value << 2) + (<bit>.value << 1) + <bit>4.value 	//synthesised attribute; Sets the bit value to be equal to the terminal
+
+<seg-value>		::= "7'b"<bit><bit><bit><bit><bit><bit><bit>
+	# No information needs to be passed as values don't need to be 
+	# unique
+
+<bit>			::= 0 | 1
+	# <bit>.s_value = <bit-terminal>.value	//synthesised attribute; Sets the bit value to be equal to the terminal
+	# <bit-terminal>.value = x				//x is an integer ranging between 0 and 1 

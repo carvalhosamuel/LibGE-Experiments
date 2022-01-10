@@ -1,0 +1,2226 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (stable)" "(v11_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/lib/ivl/v2009.vpi";
+S_0x56243feaa4a0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x56243feea1d0 .scope module, "testbench" "testbench" 3 24;
+ .timescale 0 0;
+v0x56243ffb5af0_0 .var "a0", 15 0;
+v0x56243ffb5bd0_0 .var "a1", 15 0;
+v0x56243ffb5c90_0 .var "b0", 15 0;
+v0x56243ffb5d30_0 .var "b1", 15 0;
+v0x56243ffb5df0_0 .var "clk", 0 0;
+v0x56243ffb5f00 .array/i "fitness", 0 14, 31 0;
+v0x56243ffb5fc0_0 .var "rst", 0 0;
+v0x56243ffb6080 .array "testvectors", 1 0, 127 0;
+v0x56243ffb6140_0 .var/i "vectornum", 31 0;
+v0x56243ffb62b0 .array "y0_current", 0 14;
+v0x56243ffb62b0_0 .net v0x56243ffb62b0 0, 15 0, v0x56243ffa74f0_0; 1 drivers
+v0x56243ffb62b0_1 .net v0x56243ffb62b0 1, 15 0, v0x56243ffa8270_0; 1 drivers
+v0x56243ffb62b0_2 .net v0x56243ffb62b0 2, 15 0, v0x56243ffadee0_0; 1 drivers
+v0x56243ffb62b0_3 .net v0x56243ffb62b0 3, 15 0, v0x56243ffaf040_0; 1 drivers
+v0x56243ffb62b0_4 .net v0x56243ffb62b0 4, 15 0, v0x56243ffafef0_0; 1 drivers
+v0x56243ffb62b0_5 .net v0x56243ffb62b0 5, 15 0, v0x56243ffb0da0_0; 1 drivers
+v0x56243ffb62b0_6 .net v0x56243ffb62b0 6, 15 0, v0x56243ffb1c50_0; 1 drivers
+v0x56243ffb62b0_7 .net v0x56243ffb62b0 7, 15 0, v0x56243ffb2b00_0; 1 drivers
+v0x56243ffb62b0_8 .net v0x56243ffb62b0 8, 15 0, v0x56243ffb3a40_0; 1 drivers
+v0x56243ffb62b0_9 .net v0x56243ffb62b0 9, 15 0, v0x56243ffb4a90_0; 1 drivers
+v0x56243ffb62b0_10 .net v0x56243ffb62b0 10, 15 0, v0x56243ffa9270_0; 1 drivers
+v0x56243ffb62b0_11 .net v0x56243ffb62b0 11, 15 0, v0x56243ffaa0e0_0; 1 drivers
+v0x56243ffb62b0_12 .net v0x56243ffb62b0 12, 15 0, v0x56243ffab1d0_0; 1 drivers
+v0x56243ffb62b0_13 .net v0x56243ffb62b0 13, 15 0, v0x56243ffac070_0; 1 drivers
+v0x56243ffb62b0_14 .net v0x56243ffb62b0 14, 15 0, v0x56243ffacfa0_0; 1 drivers
+v0x56243ffb65a0_0 .var "y0_expected", 15 0;
+v0x56243ffb6640 .array "y1_current", 0 14;
+v0x56243ffb6640_0 .net v0x56243ffb6640 0, 15 0, v0x56243ffa75d0_0; 1 drivers
+v0x56243ffb6640_1 .net v0x56243ffb6640 1, 15 0, v0x56243ffa8350_0; 1 drivers
+v0x56243ffb6640_2 .net v0x56243ffb6640 2, 15 0, v0x56243ffae050_0; 1 drivers
+v0x56243ffb6640_3 .net v0x56243ffb6640 3, 15 0, v0x56243ffaf120_0; 1 drivers
+v0x56243ffb6640_4 .net v0x56243ffb6640 4, 15 0, v0x56243ffaffd0_0; 1 drivers
+v0x56243ffb6640_5 .net v0x56243ffb6640 5, 15 0, v0x56243ffb0e80_0; 1 drivers
+v0x56243ffb6640_6 .net v0x56243ffb6640 6, 15 0, v0x56243ffb1d30_0; 1 drivers
+v0x56243ffb6640_7 .net v0x56243ffb6640 7, 15 0, v0x56243ffb2c70_0; 1 drivers
+v0x56243ffb6640_8 .net v0x56243ffb6640 8, 15 0, v0x56243ffb3bb0_0; 1 drivers
+v0x56243ffb6640_9 .net v0x56243ffb6640 9, 15 0, v0x56243ffb4b70_0; 1 drivers
+v0x56243ffb6640_10 .net v0x56243ffb6640 10, 15 0, v0x56243ffa9350_0; 1 drivers
+v0x56243ffb6640_11 .net v0x56243ffb6640 11, 15 0, v0x56243ffaa250_0; 1 drivers
+v0x56243ffb6640_12 .net v0x56243ffb6640 12, 15 0, v0x56243ffab340_0; 1 drivers
+v0x56243ffb6640_13 .net v0x56243ffb6640 13, 15 0, v0x56243ffac1e0_0; 1 drivers
+v0x56243ffb6640_14 .net v0x56243ffb6640 14, 15 0, v0x56243ffad110_0; 1 drivers
+v0x56243ffb6a30_0 .var "y1_expected", 15 0;
+v0x56243ffb6ad0 .array "y2_current", 0 14;
+v0x56243ffb6ad0_0 .net v0x56243ffb6ad0 0, 15 0, v0x56243ffa76b0_0; 1 drivers
+v0x56243ffb6ad0_1 .net v0x56243ffb6ad0 1, 15 0, v0x56243ffa8430_0; 1 drivers
+v0x56243ffb6ad0_2 .net v0x56243ffb6ad0 2, 15 0, v0x56243ffae130_0; 1 drivers
+v0x56243ffb6ad0_3 .net v0x56243ffb6ad0 3, 15 0, v0x56243ffaf200_0; 1 drivers
+v0x56243ffb6ad0_4 .net v0x56243ffb6ad0 4, 15 0, v0x56243ffb00b0_0; 1 drivers
+v0x56243ffb6ad0_5 .net v0x56243ffb6ad0 5, 15 0, v0x56243ffb0f60_0; 1 drivers
+v0x56243ffb6ad0_6 .net v0x56243ffb6ad0 6, 15 0, v0x56243ffb1e10_0; 1 drivers
+v0x56243ffb6ad0_7 .net v0x56243ffb6ad0 7, 15 0, v0x56243ffb2d50_0; 1 drivers
+v0x56243ffb6ad0_8 .net v0x56243ffb6ad0 8, 15 0, v0x56243ffb3c90_0; 1 drivers
+v0x56243ffb6ad0_9 .net v0x56243ffb6ad0 9, 15 0, v0x56243ffb4c50_0; 1 drivers
+v0x56243ffb6ad0_10 .net v0x56243ffb6ad0 10, 15 0, v0x56243ffa9430_0; 1 drivers
+v0x56243ffb6ad0_11 .net v0x56243ffb6ad0 11, 15 0, v0x56243ffaa330_0; 1 drivers
+v0x56243ffb6ad0_12 .net v0x56243ffb6ad0 12, 15 0, v0x56243ffab420_0; 1 drivers
+v0x56243ffb6ad0_13 .net v0x56243ffb6ad0 13, 15 0, v0x56243ffac2c0_0; 1 drivers
+v0x56243ffb6ad0_14 .net v0x56243ffb6ad0 14, 15 0, v0x56243ffad1f0_0; 1 drivers
+v0x56243ffb6ec0_0 .var "y2_expected", 15 0;
+v0x56243ffb6f60 .array "y3_current", 0 14;
+v0x56243ffb6f60_0 .net v0x56243ffb6f60 0, 15 0, v0x56243ffa7790_0; 1 drivers
+v0x56243ffb6f60_1 .net v0x56243ffb6f60 1, 15 0, v0x56243ffa8510_0; 1 drivers
+v0x56243ffb6f60_2 .net v0x56243ffb6f60 2, 15 0, v0x56243ffae210_0; 1 drivers
+v0x56243ffb6f60_3 .net v0x56243ffb6f60 3, 15 0, v0x56243ffaf2e0_0; 1 drivers
+v0x56243ffb6f60_4 .net v0x56243ffb6f60 4, 15 0, v0x56243ffb0190_0; 1 drivers
+v0x56243ffb6f60_5 .net v0x56243ffb6f60 5, 15 0, v0x56243ffb1040_0; 1 drivers
+v0x56243ffb6f60_6 .net v0x56243ffb6f60 6, 15 0, v0x56243ffb1ef0_0; 1 drivers
+v0x56243ffb6f60_7 .net v0x56243ffb6f60 7, 15 0, v0x56243ffb2e30_0; 1 drivers
+v0x56243ffb6f60_8 .net v0x56243ffb6f60 8, 15 0, v0x56243ffb3d70_0; 1 drivers
+v0x56243ffb6f60_9 .net v0x56243ffb6f60 9, 15 0, v0x56243ffb4d30_0; 1 drivers
+v0x56243ffb6f60_10 .net v0x56243ffb6f60 10, 15 0, v0x56243ffa9510_0; 1 drivers
+v0x56243ffb6f60_11 .net v0x56243ffb6f60 11, 15 0, v0x56243ffaa410_0; 1 drivers
+v0x56243ffb6f60_12 .net v0x56243ffb6f60 12, 15 0, v0x56243ffab500_0; 1 drivers
+v0x56243ffb6f60_13 .net v0x56243ffb6f60 13, 15 0, v0x56243ffac3a0_0; 1 drivers
+v0x56243ffb6f60_14 .net v0x56243ffb6f60 14, 15 0, v0x56243ffad2d0_0; 1 drivers
+v0x56243ffb7350_0 .var "y3_expected", 15 0;
+E_0x56243fee31f0 .event posedge, v0x56243ffb5df0_0;
+S_0x56243feea360 .scope begin, "$ivl_for_loop1" "$ivl_for_loop1" 3 130, 3 130 0, S_0x56243feea1d0;
+ .timescale 0 0;
+v0x56243fefb0c0_0 .var/2s "i", 31 0;
+S_0x56243ffa6c70 .scope begin, "$ivl_for_loop2" "$ivl_for_loop2" 3 138, 3 138 0, S_0x56243feea1d0;
+ .timescale 0 0;
+v0x56243feff600_0 .var/2s "i", 31 0;
+S_0x56243ffa6e60 .scope module, "dut_0" "individual_0" 3 50, 4 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ff03b80_0 .net "a0", 15 0, v0x56243ffb5af0_0;  1 drivers
+v0x56243ff0d7b0_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  1 drivers
+v0x56243ff174f0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  1 drivers
+v0x56243ff1bac0_0 .net "b1", 15 0, v0x56243ffb5d30_0;  1 drivers
+v0x56243ff944e0_0 .var "r0", 15 0;
+v0x56243ffa7250_0 .var "r1", 15 0;
+v0x56243ffa7330_0 .var "r2", 15 0;
+v0x56243ffa7410_0 .var "r3", 15 0;
+v0x56243ffa74f0_0 .var "y0", 15 0;
+v0x56243ffa75d0_0 .var "y1", 15 0;
+v0x56243ffa76b0_0 .var "y2", 15 0;
+v0x56243ffa7790_0 .var "y3", 15 0;
+E_0x56243fee2a00/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243fee2a00/1 .event edge, v0x56243ffa7250_0, v0x56243ff944e0_0, v0x56243ffa7330_0, v0x56243ffa7410_0;
+E_0x56243fee2a00 .event/or E_0x56243fee2a00/0, E_0x56243fee2a00/1;
+S_0x56243ffa7970 .scope module, "dut_1" "individual_1" 3 51, 5 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffa7c40_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffa7d20_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffa7dc0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffa7e60_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffa7f30_0 .var "r0", 15 0;
+v0x56243ffa7fd0_0 .var "r1", 15 0;
+v0x56243ffa80b0_0 .var "r2", 15 0;
+v0x56243ffa8190_0 .var "r3", 15 0;
+v0x56243ffa8270_0 .var "y0", 15 0;
+v0x56243ffa8350_0 .var "y1", 15 0;
+v0x56243ffa8430_0 .var "y2", 15 0;
+v0x56243ffa8510_0 .var "y3", 15 0;
+E_0x56243fee2590/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243fee2590/1 .event edge, v0x56243ffa7f30_0, v0x56243ffa8190_0, v0x56243ffa7fd0_0, v0x56243ffa80b0_0;
+E_0x56243fee2590 .event/or E_0x56243fee2590/0, E_0x56243fee2590/1;
+S_0x56243ffa86f0 .scope module, "dut_10" "individual_10" 3 60, 6 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffa8a60_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffa8b90_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffa8ca0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffa8d90_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffa8ea0_0 .var "r0", 15 0;
+v0x56243ffa8fd0_0 .var "r1", 15 0;
+v0x56243ffa90b0_0 .var "r2", 15 0;
+v0x56243ffa9190_0 .var "r3", 15 0;
+v0x56243ffa9270_0 .var "y0", 15 0;
+v0x56243ffa9350_0 .var "y1", 15 0;
+v0x56243ffa9430_0 .var "y2", 15 0;
+v0x56243ffa9510_0 .var "y3", 15 0;
+E_0x56243fee2120/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243fee2120/1 .event edge, v0x56243ffa9190_0, v0x56243ffa90b0_0, v0x56243ffa8fd0_0, v0x56243ffa8ea0_0;
+E_0x56243fee2120 .event/or E_0x56243fee2120/0, E_0x56243fee2120/1;
+S_0x56243ffa96f0 .scope module, "dut_11" "individual_11" 3 61, 7 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffa9a10_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffa9af0_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffa9bb0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffa9c50_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffa9d10_0 .var "r0", 15 0;
+v0x56243ffa9e40_0 .var "r1", 15 0;
+v0x56243ffa9f20_0 .var "r2", 15 0;
+v0x56243ffaa000_0 .var "r3", 15 0;
+v0x56243ffaa0e0_0 .var "y0", 15 0;
+v0x56243ffaa250_0 .var "y1", 15 0;
+v0x56243ffaa330_0 .var "y2", 15 0;
+v0x56243ffaa410_0 .var "y3", 15 0;
+E_0x56243fee1c90/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243fee1c90/1 .event edge, v0x56243ffa9e40_0, v0x56243ffa9d10_0, v0x56243ffa9f20_0, v0x56243ffaa000_0;
+E_0x56243fee1c90 .event/or E_0x56243fee1c90/0, E_0x56243fee1c90/1;
+S_0x56243ffaa5f0 .scope module, "dut_12" "individual_12" 3 62, 8 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffaa910_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffaaa80_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffaabd0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffaad00_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffaae50_0 .var "r0", 15 0;
+v0x56243ffaaf30_0 .var "r1", 15 0;
+v0x56243ffab010_0 .var "r2", 15 0;
+v0x56243ffab0f0_0 .var "r3", 15 0;
+v0x56243ffab1d0_0 .var "y0", 15 0;
+v0x56243ffab340_0 .var "y1", 15 0;
+v0x56243ffab420_0 .var "y2", 15 0;
+v0x56243ffab500_0 .var "y3", 15 0;
+E_0x56243fecc3a0/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243fecc3a0/1 .event edge, v0x56243ffab0f0_0, v0x56243ffaae50_0, v0x56243ffab010_0, v0x56243ffaaf30_0;
+E_0x56243fecc3a0 .event/or E_0x56243fecc3a0/0, E_0x56243fecc3a0/1;
+S_0x56243ffab6e0 .scope module, "dut_13" "individual_13" 3 63, 9 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffab9f0_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffabad0_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffabb90_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffabc30_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffabcf0_0 .var "r0", 15 0;
+v0x56243ffabdd0_0 .var "r1", 15 0;
+v0x56243ffabeb0_0 .var "r2", 15 0;
+v0x56243ffabf90_0 .var "r3", 15 0;
+v0x56243ffac070_0 .var "y0", 15 0;
+v0x56243ffac1e0_0 .var "y1", 15 0;
+v0x56243ffac2c0_0 .var "y2", 15 0;
+v0x56243ffac3a0_0 .var "y3", 15 0;
+E_0x56243ffab940/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffab940/1 .event edge, v0x56243ffabcf0_0, v0x56243ffabf90_0, v0x56243ffabeb0_0, v0x56243ffabdd0_0;
+E_0x56243ffab940 .event/or E_0x56243ffab940/0, E_0x56243ffab940/1;
+S_0x56243ffac580 .scope module, "dut_14" "individual_14" 3 64, 10 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffac920_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffaca00_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffacac0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffacb60_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffacc20_0 .var "r0", 15 0;
+v0x56243ffacd00_0 .var "r1", 15 0;
+v0x56243ffacde0_0 .var "r2", 15 0;
+v0x56243ffacec0_0 .var "r3", 15 0;
+v0x56243ffacfa0_0 .var "y0", 15 0;
+v0x56243ffad110_0 .var "y1", 15 0;
+v0x56243ffad1f0_0 .var "y2", 15 0;
+v0x56243ffad2d0_0 .var "y3", 15 0;
+E_0x56243ffac870/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffac870/1 .event edge, v0x56243ffacec0_0, v0x56243ffacde0_0, v0x56243ffacd00_0, v0x56243ffacc20_0;
+E_0x56243ffac870 .event/or E_0x56243ffac870/0, E_0x56243ffac870/1;
+S_0x56243ffad4b0 .scope module, "dut_2" "individual_2" 3 52, 11 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffad810_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffad8f0_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffad9b0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffada50_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffadb10_0 .var "r0", 15 0;
+v0x56243ffadc40_0 .var "r1", 15 0;
+v0x56243ffadd20_0 .var "r2", 15 0;
+v0x56243ffade00_0 .var "r3", 15 0;
+v0x56243ffadee0_0 .var "y0", 15 0;
+v0x56243ffae050_0 .var "y1", 15 0;
+v0x56243ffae130_0 .var "y2", 15 0;
+v0x56243ffae210_0 .var "y3", 15 0;
+E_0x56243ffad760/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffad760/1 .event edge, v0x56243ffadd20_0, v0x56243ffade00_0, v0x56243ffadc40_0, v0x56243ffadb10_0;
+E_0x56243ffad760 .event/or E_0x56243ffad760/0, E_0x56243ffad760/1;
+S_0x56243ffae3f0 .scope module, "dut_3" "individual_3" 3 53, 12 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffae750_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffae830_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffae8f0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffaeaa0_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffaec70_0 .var "r0", 15 0;
+v0x56243ffaeda0_0 .var "r1", 15 0;
+v0x56243ffaee80_0 .var "r2", 15 0;
+v0x56243ffaef60_0 .var "r3", 15 0;
+v0x56243ffaf040_0 .var "y0", 15 0;
+v0x56243ffaf120_0 .var "y1", 15 0;
+v0x56243ffaf200_0 .var "y2", 15 0;
+v0x56243ffaf2e0_0 .var "y3", 15 0;
+E_0x56243ffae6a0/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffae6a0/1 .event edge, v0x56243ffaef60_0, v0x56243ffaee80_0, v0x56243ffaeda0_0, v0x56243ffaec70_0;
+E_0x56243ffae6a0 .event/or E_0x56243ffae6a0/0, E_0x56243ffae6a0/1;
+S_0x56243ffaf4c0 .scope module, "dut_4" "individual_4" 3 54, 13 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffaf820_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffaf900_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffaf9c0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffafa60_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffafb20_0 .var "r0", 15 0;
+v0x56243ffafc50_0 .var "r1", 15 0;
+v0x56243ffafd30_0 .var "r2", 15 0;
+v0x56243ffafe10_0 .var "r3", 15 0;
+v0x56243ffafef0_0 .var "y0", 15 0;
+v0x56243ffaffd0_0 .var "y1", 15 0;
+v0x56243ffb00b0_0 .var "y2", 15 0;
+v0x56243ffb0190_0 .var "y3", 15 0;
+E_0x56243ffaf770/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffaf770/1 .event edge, v0x56243ffafb20_0, v0x56243ffafe10_0, v0x56243ffafd30_0, v0x56243ffafc50_0;
+E_0x56243ffaf770 .event/or E_0x56243ffaf770/0, E_0x56243ffaf770/1;
+S_0x56243ffb0370 .scope module, "dut_5" "individual_5" 3 55, 14 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffb06d0_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffb07b0_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffb0870_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffb0910_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffb09d0_0 .var "r0", 15 0;
+v0x56243ffb0b00_0 .var "r1", 15 0;
+v0x56243ffb0be0_0 .var "r2", 15 0;
+v0x56243ffb0cc0_0 .var "r3", 15 0;
+v0x56243ffb0da0_0 .var "y0", 15 0;
+v0x56243ffb0e80_0 .var "y1", 15 0;
+v0x56243ffb0f60_0 .var "y2", 15 0;
+v0x56243ffb1040_0 .var "y3", 15 0;
+E_0x56243ffb0620/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffb0620/1 .event edge, v0x56243ffb0be0_0, v0x56243ffb09d0_0, v0x56243ffb0cc0_0, v0x56243ffb0b00_0;
+E_0x56243ffb0620 .event/or E_0x56243ffb0620/0, E_0x56243ffb0620/1;
+S_0x56243ffb1220 .scope module, "dut_6" "individual_6" 3 56, 15 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffb1580_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffb1660_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffb1720_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffb17c0_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffb1880_0 .var "r0", 15 0;
+v0x56243ffb19b0_0 .var "r1", 15 0;
+v0x56243ffb1a90_0 .var "r2", 15 0;
+v0x56243ffb1b70_0 .var "r3", 15 0;
+v0x56243ffb1c50_0 .var "y0", 15 0;
+v0x56243ffb1d30_0 .var "y1", 15 0;
+v0x56243ffb1e10_0 .var "y2", 15 0;
+v0x56243ffb1ef0_0 .var "y3", 15 0;
+E_0x56243ffb14d0/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffb14d0/1 .event edge, v0x56243ffb1b70_0, v0x56243ffb19b0_0, v0x56243ffb1880_0, v0x56243ffb1a90_0;
+E_0x56243ffb14d0 .event/or E_0x56243ffb14d0/0, E_0x56243ffb14d0/1;
+S_0x56243ffb20d0 .scope module, "dut_7" "individual_7" 3 57, 16 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffb2430_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffb2510_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffb25d0_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffb2670_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffb2730_0 .var "r0", 15 0;
+v0x56243ffb2860_0 .var "r1", 15 0;
+v0x56243ffb2940_0 .var "r2", 15 0;
+v0x56243ffb2a20_0 .var "r3", 15 0;
+v0x56243ffb2b00_0 .var "y0", 15 0;
+v0x56243ffb2c70_0 .var "y1", 15 0;
+v0x56243ffb2d50_0 .var "y2", 15 0;
+v0x56243ffb2e30_0 .var "y3", 15 0;
+E_0x56243ffb2380/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffb2380/1 .event edge, v0x56243ffb2860_0, v0x56243ffb2a20_0, v0x56243ffb2940_0, v0x56243ffb2730_0;
+E_0x56243ffb2380 .event/or E_0x56243ffb2380/0, E_0x56243ffb2380/1;
+S_0x56243ffb3010 .scope module, "dut_8" "individual_8" 3 58, 17 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffb3370_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffb3450_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffb3510_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffb35b0_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffb3670_0 .var "r0", 15 0;
+v0x56243ffb37a0_0 .var "r1", 15 0;
+v0x56243ffb3880_0 .var "r2", 15 0;
+v0x56243ffb3960_0 .var "r3", 15 0;
+v0x56243ffb3a40_0 .var "y0", 15 0;
+v0x56243ffb3bb0_0 .var "y1", 15 0;
+v0x56243ffb3c90_0 .var "y2", 15 0;
+v0x56243ffb3d70_0 .var "y3", 15 0;
+E_0x56243ffb32c0/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffb32c0/1 .event edge, v0x56243ffb3670_0, v0x56243ffb3960_0, v0x56243ffb3880_0, v0x56243ffb37a0_0;
+E_0x56243ffb32c0 .event/or E_0x56243ffb32c0/0, E_0x56243ffb32c0/1;
+S_0x56243ffb3f50 .scope module, "dut_9" "individual_9" 3 59, 18 1 0, S_0x56243feea1d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a1";
+    .port_info 1 /INPUT 16 "a0";
+    .port_info 2 /INPUT 16 "b1";
+    .port_info 3 /INPUT 16 "b0";
+    .port_info 4 /OUTPUT 16 "y3";
+    .port_info 5 /OUTPUT 16 "y2";
+    .port_info 6 /OUTPUT 16 "y1";
+    .port_info 7 /OUTPUT 16 "y0";
+v0x56243ffb43c0_0 .net "a0", 15 0, v0x56243ffb5af0_0;  alias, 1 drivers
+v0x56243ffb44a0_0 .net "a1", 15 0, v0x56243ffb5bd0_0;  alias, 1 drivers
+v0x56243ffb4560_0 .net "b0", 15 0, v0x56243ffb5c90_0;  alias, 1 drivers
+v0x56243ffb4600_0 .net "b1", 15 0, v0x56243ffb5d30_0;  alias, 1 drivers
+v0x56243ffb46c0_0 .var "r0", 15 0;
+v0x56243ffb47f0_0 .var "r1", 15 0;
+v0x56243ffb48d0_0 .var "r2", 15 0;
+v0x56243ffb49b0_0 .var "r3", 15 0;
+v0x56243ffb4a90_0 .var "y0", 15 0;
+v0x56243ffb4b70_0 .var "y1", 15 0;
+v0x56243ffb4c50_0 .var "y2", 15 0;
+v0x56243ffb4d30_0 .var "y3", 15 0;
+E_0x56243ffb4310/0 .event edge, v0x56243ff03b80_0, v0x56243ff0d7b0_0, v0x56243ff174f0_0, v0x56243ff1bac0_0;
+E_0x56243ffb4310/1 .event edge, v0x56243ffb47f0_0, v0x56243ffb48d0_0, v0x56243ffb46c0_0, v0x56243ffb49b0_0;
+E_0x56243ffb4310 .event/or E_0x56243ffb4310/0, E_0x56243ffb4310/1;
+S_0x56243ffb4f10 .scope task, "testcase" "testcase" 3 68, 3 68 0, S_0x56243feea1d0;
+ .timescale 0 0;
+v0x56243ffb53a0_0 .var "a0_value", 15 0;
+v0x56243ffb54a0_0 .var "a1_value", 15 0;
+v0x56243ffb5580_0 .var "b0_value", 15 0;
+v0x56243ffb5640_0 .var "b1_value", 15 0;
+v0x56243ffb5720_0 .var "y0_value", 15 0;
+v0x56243ffb5850_0 .var "y1_value", 15 0;
+v0x56243ffb5930_0 .var "y2_value", 15 0;
+v0x56243ffb5a10_0 .var "y3_value", 15 0;
+TD_testbench.testcase ;
+    %load/vec4 v0x56243ffb54a0_0;
+    %store/vec4 v0x56243ffb5bd0_0, 0, 16;
+    %load/vec4 v0x56243ffb53a0_0;
+    %store/vec4 v0x56243ffb5af0_0, 0, 16;
+    %load/vec4 v0x56243ffb5640_0;
+    %store/vec4 v0x56243ffb5d30_0, 0, 16;
+    %load/vec4 v0x56243ffb5580_0;
+    %store/vec4 v0x56243ffb5c90_0, 0, 16;
+    %fork t_1, S_0x56243ffb50a0;
+    %jmp t_0;
+    .scope S_0x56243ffb50a0;
+t_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x56243ffb52a0_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x56243ffb52a0_0;
+    %cmpi/s 15, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %ix/getv/s 4, v0x56243ffb52a0_0;
+    %load/vec4a v0x56243ffb6f60, 4;
+    %load/vec4 v0x56243ffb5a10_0;
+    %xor;
+    %inv;
+    %vpi_func 3 87 "$countones" 32, S<0,vec4,u16> {1 0 0};
+    %ix/getv/s 4, v0x56243ffb52a0_0;
+    %load/vec4a v0x56243ffb6ad0, 4;
+    %load/vec4 v0x56243ffb5930_0;
+    %xor;
+    %inv;
+    %vpi_func 3 87 "$countones" 32, S<0,vec4,u16> {1 0 0};
+    %add;
+    %ix/getv/s 4, v0x56243ffb52a0_0;
+    %load/vec4a v0x56243ffb6640, 4;
+    %load/vec4 v0x56243ffb5850_0;
+    %xor;
+    %inv;
+    %vpi_func 3 87 "$countones" 32, S<0,vec4,u16> {1 0 0};
+    %add;
+    %ix/getv/s 4, v0x56243ffb52a0_0;
+    %load/vec4a v0x56243ffb62b0, 4;
+    %load/vec4 v0x56243ffb5720_0;
+    %xor;
+    %inv;
+    %vpi_func 3 87 "$countones" 32, S<0,vec4,u16> {1 0 0};
+    %add;
+    %ix/getv/s 4, v0x56243ffb52a0_0;
+    %store/vec4a v0x56243ffb5f00, 4, 0;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x56243ffb52a0_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %cast2;
+    %store/vec4 v0x56243ffb52a0_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %end;
+    .scope S_0x56243ffb4f10;
+t_0 %join;
+    %end;
+S_0x56243ffb50a0 .scope begin, "$ivl_for_loop0" "$ivl_for_loop0" 3 85, 3 85 0, S_0x56243ffb4f10;
+ .timescale 0 0;
+v0x56243ffb52a0_0 .var/2s "i", 31 0;
+    .scope S_0x56243ffa6e60;
+T_1 ;
+    %wait E_0x56243fee2a00;
+    %load/vec4 v0x56243ff03b80_0;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    %load/vec4 v0x56243ff0d7b0_0;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ff174f0_0;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ff1bac0_0;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7410_0;
+    %load/vec4 v0x56243ffa7250_0;
+    %and;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ff174f0_0;
+    %inv;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ff944e0_0;
+    %load/vec4 v0x56243ff944e0_0;
+    %xor;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    %load/vec4 v0x56243ffa7330_0;
+    %inv;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ff944e0_0;
+    %load/vec4 v0x56243ff03b80_0;
+    %or;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    %load/vec4 v0x56243ffa7330_0;
+    %inv;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ffa7250_0;
+    %or;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ffa7410_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ffa7410_0;
+    %or;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ff0d7b0_0;
+    %xor;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ff1bac0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ff1bac0_0;
+    %or;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ff03b80_0;
+    %and;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ff0d7b0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ffa7410_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ffa7250_0;
+    %inv;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ffa7330_0;
+    %inv;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %and;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ff0d7b0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ff1bac0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    %load/vec4 v0x56243ffa7410_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ff1bac0_0;
+    %or;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ffa7330_0;
+    %inv;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ffa7250_0;
+    %or;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ffa7250_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ff174f0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ff1bac0_0;
+    %inv;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7410_0;
+    %load/vec4 v0x56243ffa7410_0;
+    %and;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    %load/vec4 v0x56243ff03b80_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ff944e0_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %xor;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ff0d7b0_0;
+    %and;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ff944e0_0;
+    %load/vec4 v0x56243ff1bac0_0;
+    %or;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ff03b80_0;
+    %or;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ffa7330_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa7250_0;
+    %load/vec4 v0x56243ffa7330_0;
+    %and;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7330_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %xor;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7410_0;
+    %load/vec4 v0x56243ff944e0_0;
+    %or;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ff944e0_0;
+    %load/vec4 v0x56243ff174f0_0;
+    %and;
+    %store/vec4 v0x56243ff944e0_0, 0, 16;
+    %load/vec4 v0x56243ff03b80_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7330_0, 0, 16;
+    %load/vec4 v0x56243ff174f0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ff1bac0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7250_0, 0, 16;
+    %load/vec4 v0x56243ff1bac0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    %load/vec4 v0x56243ffa7250_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7410_0, 0, 16;
+    %load/vec4 v0x56243ffa7410_0;
+    %store/vec4 v0x56243ffa7790_0, 0, 16;
+    %load/vec4 v0x56243ffa7330_0;
+    %store/vec4 v0x56243ffa76b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7250_0;
+    %store/vec4 v0x56243ffa75d0_0, 0, 16;
+    %load/vec4 v0x56243ff944e0_0;
+    %store/vec4 v0x56243ffa74f0_0, 0, 16;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x56243ffa7970;
+T_2 ;
+    %wait E_0x56243fee2590;
+    %load/vec4 v0x56243ffa7c40_0;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    %load/vec4 v0x56243ffa7d20_0;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7e60_0;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %and;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7f30_0;
+    %and;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7f30_0;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %xor;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7f30_0;
+    %or;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7f30_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7f30_0;
+    %inv;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    %load/vec4 v0x56243ffa7c40_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7f30_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %or;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa8190_0;
+    %load/vec4 v0x56243ffa7e60_0;
+    %xor;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7fd0_0;
+    %load/vec4 v0x56243ffa8190_0;
+    %or;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7f30_0;
+    %or;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7fd0_0;
+    %load/vec4 v0x56243ffa7c40_0;
+    %or;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa8190_0;
+    %load/vec4 v0x56243ffa7c40_0;
+    %and;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7fd0_0;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %xor;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %and;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7f30_0;
+    %and;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    %load/vec4 v0x56243ffa7c40_0;
+    %inv;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7f30_0;
+    %load/vec4 v0x56243ffa7d20_0;
+    %xor;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %inv;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %inv;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa8190_0;
+    %and;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7fd0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa8190_0;
+    %load/vec4 v0x56243ffa7e60_0;
+    %xor;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    %load/vec4 v0x56243ffa80b0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    %load/vec4 v0x56243ffa7fd0_0;
+    %inv;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa8190_0;
+    %or;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa8190_0;
+    %load/vec4 v0x56243ffa8190_0;
+    %xor;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7f30_0;
+    %load/vec4 v0x56243ffa7f30_0;
+    %xor;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    %load/vec4 v0x56243ffa7fd0_0;
+    %inv;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7e60_0;
+    %and;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7f30_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa80b0_0;
+    %inv;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa80b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7fd0_0;
+    %load/vec4 v0x56243ffa7c40_0;
+    %xor;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffa7fd0_0;
+    %load/vec4 v0x56243ffa8190_0;
+    %or;
+    %store/vec4 v0x56243ffa7fd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa7f30_0;
+    %load/vec4 v0x56243ffa8190_0;
+    %xor;
+    %store/vec4 v0x56243ffa7f30_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa8190_0;
+    %load/vec4 v0x56243ffa7d20_0;
+    %xor;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    %load/vec4 v0x56243ffa80b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa8190_0;
+    %load/vec4 v0x56243ffa7f30_0;
+    %and;
+    %store/vec4 v0x56243ffa8190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa80b0_0;
+    %load/vec4 v0x56243ffa7c40_0;
+    %xor;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa7dc0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffa80b0_0, 0, 16;
+    %load/vec4 v0x56243ffa8190_0;
+    %store/vec4 v0x56243ffa8510_0, 0, 16;
+    %load/vec4 v0x56243ffa80b0_0;
+    %store/vec4 v0x56243ffa8430_0, 0, 16;
+    %load/vec4 v0x56243ffa7fd0_0;
+    %store/vec4 v0x56243ffa8350_0, 0, 16;
+    %load/vec4 v0x56243ffa7f30_0;
+    %store/vec4 v0x56243ffa8270_0, 0, 16;
+    %jmp T_2;
+    .thread T_2, $push;
+    .scope S_0x56243ffad4b0;
+T_3 ;
+    %wait E_0x56243ffad760;
+    %load/vec4 v0x56243ffad810_0;
+    %store/vec4 v0x56243ffadb10_0, 0, 16;
+    %load/vec4 v0x56243ffad8f0_0;
+    %store/vec4 v0x56243ffadc40_0, 0, 16;
+    %load/vec4 v0x56243ffad9b0_0;
+    %store/vec4 v0x56243ffadd20_0, 0, 16;
+    %load/vec4 v0x56243ffada50_0;
+    %store/vec4 v0x56243ffade00_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffadc40_0;
+    %load/vec4 v0x56243ffad9b0_0;
+    %and;
+    %store/vec4 v0x56243ffadc40_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffade00_0;
+    %load/vec4 v0x56243ffadd20_0;
+    %and;
+    %store/vec4 v0x56243ffade00_0, 0, 16;
+    %load/vec4 v0x56243ffade00_0;
+    %store/vec4 v0x56243ffae210_0, 0, 16;
+    %load/vec4 v0x56243ffadd20_0;
+    %store/vec4 v0x56243ffae130_0, 0, 16;
+    %load/vec4 v0x56243ffadc40_0;
+    %store/vec4 v0x56243ffae050_0, 0, 16;
+    %load/vec4 v0x56243ffadb10_0;
+    %store/vec4 v0x56243ffadee0_0, 0, 16;
+    %jmp T_3;
+    .thread T_3, $push;
+    .scope S_0x56243ffae3f0;
+T_4 ;
+    %wait E_0x56243ffae6a0;
+    %load/vec4 v0x56243ffae750_0;
+    %store/vec4 v0x56243ffaec70_0, 0, 16;
+    %load/vec4 v0x56243ffae830_0;
+    %store/vec4 v0x56243ffaeda0_0, 0, 16;
+    %load/vec4 v0x56243ffae8f0_0;
+    %store/vec4 v0x56243ffaee80_0, 0, 16;
+    %load/vec4 v0x56243ffaeaa0_0;
+    %store/vec4 v0x56243ffaef60_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffaef60_0;
+    %load/vec4 v0x56243ffae830_0;
+    %and;
+    %store/vec4 v0x56243ffaef60_0, 0, 16;
+    %load/vec4 v0x56243ffaef60_0;
+    %store/vec4 v0x56243ffaf2e0_0, 0, 16;
+    %load/vec4 v0x56243ffaee80_0;
+    %store/vec4 v0x56243ffaf200_0, 0, 16;
+    %load/vec4 v0x56243ffaeda0_0;
+    %store/vec4 v0x56243ffaf120_0, 0, 16;
+    %load/vec4 v0x56243ffaec70_0;
+    %store/vec4 v0x56243ffaf040_0, 0, 16;
+    %jmp T_4;
+    .thread T_4, $push;
+    .scope S_0x56243ffaf4c0;
+T_5 ;
+    %wait E_0x56243ffaf770;
+    %load/vec4 v0x56243ffaf820_0;
+    %store/vec4 v0x56243ffafb20_0, 0, 16;
+    %load/vec4 v0x56243ffaf900_0;
+    %store/vec4 v0x56243ffafc50_0, 0, 16;
+    %load/vec4 v0x56243ffaf9c0_0;
+    %store/vec4 v0x56243ffafd30_0, 0, 16;
+    %load/vec4 v0x56243ffafa60_0;
+    %store/vec4 v0x56243ffafe10_0, 0, 16;
+    %load/vec4 v0x56243ffafb20_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffafc50_0, 0, 16;
+    %load/vec4 v0x56243ffafe10_0;
+    %store/vec4 v0x56243ffb0190_0, 0, 16;
+    %load/vec4 v0x56243ffafd30_0;
+    %store/vec4 v0x56243ffb00b0_0, 0, 16;
+    %load/vec4 v0x56243ffafc50_0;
+    %store/vec4 v0x56243ffaffd0_0, 0, 16;
+    %load/vec4 v0x56243ffafb20_0;
+    %store/vec4 v0x56243ffafef0_0, 0, 16;
+    %jmp T_5;
+    .thread T_5, $push;
+    .scope S_0x56243ffb0370;
+T_6 ;
+    %wait E_0x56243ffb0620;
+    %load/vec4 v0x56243ffb06d0_0;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb07b0_0;
+    %store/vec4 v0x56243ffb0b00_0, 0, 16;
+    %load/vec4 v0x56243ffb0870_0;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb0910_0;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb0be0_0;
+    %xor;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb09d0_0;
+    %inv;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb0cc0_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %or;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb06d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb0cc0_0;
+    %load/vec4 v0x56243ffb0be0_0;
+    %and;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0b00_0;
+    %load/vec4 v0x56243ffb0910_0;
+    %xor;
+    %store/vec4 v0x56243ffb0b00_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb0cc0_0;
+    %load/vec4 v0x56243ffb0be0_0;
+    %and;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %and;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb07b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb06d0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %and;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb07b0_0;
+    %xor;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb0b00_0;
+    %and;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb07b0_0;
+    %inv;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb0870_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb0b00_0, 0, 16;
+    %load/vec4 v0x56243ffb0b00_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb0b00_0;
+    %inv;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0cc0_0;
+    %load/vec4 v0x56243ffb06d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %inv;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb07b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb0b00_0;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %or;
+    %store/vec4 v0x56243ffb0b00_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb0b00_0;
+    %or;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb06d0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb0b00_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb0b00_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %or;
+    %store/vec4 v0x56243ffb0b00_0, 0, 16;
+    %load/vec4 v0x56243ffb0b00_0;
+    %inv;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %inv;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %or;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb0910_0;
+    %xor;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb0870_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb0910_0;
+    %inv;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb07b0_0;
+    %or;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %or;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb06d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb0870_0;
+    %inv;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0b00_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0b00_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb07b0_0;
+    %and;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %or;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0cc0_0;
+    %load/vec4 v0x56243ffb0be0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb07b0_0;
+    %or;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0cc0_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    %load/vec4 v0x56243ffb0910_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb07b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb0cc0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb0be0_0;
+    %load/vec4 v0x56243ffb09d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb0be0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb09d0_0;
+    %load/vec4 v0x56243ffb0be0_0;
+    %and;
+    %store/vec4 v0x56243ffb09d0_0, 0, 16;
+    %load/vec4 v0x56243ffb0cc0_0;
+    %store/vec4 v0x56243ffb1040_0, 0, 16;
+    %load/vec4 v0x56243ffb0be0_0;
+    %store/vec4 v0x56243ffb0f60_0, 0, 16;
+    %load/vec4 v0x56243ffb0b00_0;
+    %store/vec4 v0x56243ffb0e80_0, 0, 16;
+    %load/vec4 v0x56243ffb09d0_0;
+    %store/vec4 v0x56243ffb0da0_0, 0, 16;
+    %jmp T_6;
+    .thread T_6, $push;
+    .scope S_0x56243ffb1220;
+T_7 ;
+    %wait E_0x56243ffb14d0;
+    %load/vec4 v0x56243ffb1580_0;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb1660_0;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    %load/vec4 v0x56243ffb1720_0;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb17c0_0;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    %load/vec4 v0x56243ffb1660_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1b70_0;
+    %or;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb1b70_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    %load/vec4 v0x56243ffb19b0_0;
+    %inv;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb1880_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb17c0_0;
+    %inv;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    %load/vec4 v0x56243ffb1a90_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %xor;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb1880_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1880_0;
+    %and;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %or;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb1580_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb1580_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %or;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %or;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb19b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1660_0;
+    %or;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb19b0_0;
+    %inv;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    %load/vec4 v0x56243ffb1880_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %or;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1b70_0;
+    %load/vec4 v0x56243ffb1b70_0;
+    %and;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    %load/vec4 v0x56243ffb17c0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1720_0;
+    %xor;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb19b0_0;
+    %inv;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb1720_0;
+    %inv;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1b70_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %and;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1660_0;
+    %xor;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1b70_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %or;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    %load/vec4 v0x56243ffb1580_0;
+    %inv;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb19b0_0;
+    %load/vec4 v0x56243ffb1660_0;
+    %xor;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1660_0;
+    %xor;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb17c0_0;
+    %or;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb19b0_0;
+    %load/vec4 v0x56243ffb1580_0;
+    %or;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    %load/vec4 v0x56243ffb1b70_0;
+    %inv;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb1b70_0;
+    %load/vec4 v0x56243ffb1720_0;
+    %xor;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb19b0_0;
+    %xor;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb1720_0;
+    %inv;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb19b0_0;
+    %load/vec4 v0x56243ffb1720_0;
+    %and;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1a90_0;
+    %and;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1660_0;
+    %and;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb19b0_0;
+    %load/vec4 v0x56243ffb1720_0;
+    %or;
+    %store/vec4 v0x56243ffb19b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1b70_0;
+    %load/vec4 v0x56243ffb1660_0;
+    %and;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb1880_0;
+    %load/vec4 v0x56243ffb1880_0;
+    %or;
+    %store/vec4 v0x56243ffb1880_0, 0, 16;
+    %load/vec4 v0x56243ffb19b0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    %load/vec4 v0x56243ffb1660_0;
+    %inv;
+    %store/vec4 v0x56243ffb1b70_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb1a90_0;
+    %load/vec4 v0x56243ffb1720_0;
+    %and;
+    %store/vec4 v0x56243ffb1a90_0, 0, 16;
+    %load/vec4 v0x56243ffb1b70_0;
+    %store/vec4 v0x56243ffb1ef0_0, 0, 16;
+    %load/vec4 v0x56243ffb1a90_0;
+    %store/vec4 v0x56243ffb1e10_0, 0, 16;
+    %load/vec4 v0x56243ffb19b0_0;
+    %store/vec4 v0x56243ffb1d30_0, 0, 16;
+    %load/vec4 v0x56243ffb1880_0;
+    %store/vec4 v0x56243ffb1c50_0, 0, 16;
+    %jmp T_7;
+    .thread T_7, $push;
+    .scope S_0x56243ffb20d0;
+T_8 ;
+    %wait E_0x56243ffb2380;
+    %load/vec4 v0x56243ffb2430_0;
+    %store/vec4 v0x56243ffb2730_0, 0, 16;
+    %load/vec4 v0x56243ffb2510_0;
+    %store/vec4 v0x56243ffb2860_0, 0, 16;
+    %load/vec4 v0x56243ffb25d0_0;
+    %store/vec4 v0x56243ffb2940_0, 0, 16;
+    %load/vec4 v0x56243ffb2670_0;
+    %store/vec4 v0x56243ffb2a20_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb2a20_0;
+    %load/vec4 v0x56243ffb2860_0;
+    %or;
+    %store/vec4 v0x56243ffb2a20_0, 0, 16;
+    %load/vec4 v0x56243ffb2a20_0;
+    %store/vec4 v0x56243ffb2e30_0, 0, 16;
+    %load/vec4 v0x56243ffb2940_0;
+    %store/vec4 v0x56243ffb2d50_0, 0, 16;
+    %load/vec4 v0x56243ffb2860_0;
+    %store/vec4 v0x56243ffb2c70_0, 0, 16;
+    %load/vec4 v0x56243ffb2730_0;
+    %store/vec4 v0x56243ffb2b00_0, 0, 16;
+    %jmp T_8;
+    .thread T_8, $push;
+    .scope S_0x56243ffb3010;
+T_9 ;
+    %wait E_0x56243ffb32c0;
+    %load/vec4 v0x56243ffb3370_0;
+    %store/vec4 v0x56243ffb3670_0, 0, 16;
+    %load/vec4 v0x56243ffb3450_0;
+    %store/vec4 v0x56243ffb37a0_0, 0, 16;
+    %load/vec4 v0x56243ffb3510_0;
+    %store/vec4 v0x56243ffb3880_0, 0, 16;
+    %load/vec4 v0x56243ffb35b0_0;
+    %store/vec4 v0x56243ffb3960_0, 0, 16;
+    %load/vec4 v0x56243ffb3670_0;
+    %inv;
+    %store/vec4 v0x56243ffb3960_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb3670_0;
+    %load/vec4 v0x56243ffb3960_0;
+    %or;
+    %store/vec4 v0x56243ffb3670_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb3880_0;
+    %load/vec4 v0x56243ffb3450_0;
+    %xor;
+    %store/vec4 v0x56243ffb3880_0, 0, 16;
+    %load/vec4 v0x56243ffb3960_0;
+    %store/vec4 v0x56243ffb3d70_0, 0, 16;
+    %load/vec4 v0x56243ffb3880_0;
+    %store/vec4 v0x56243ffb3c90_0, 0, 16;
+    %load/vec4 v0x56243ffb37a0_0;
+    %store/vec4 v0x56243ffb3bb0_0, 0, 16;
+    %load/vec4 v0x56243ffb3670_0;
+    %store/vec4 v0x56243ffb3a40_0, 0, 16;
+    %jmp T_9;
+    .thread T_9, $push;
+    .scope S_0x56243ffb3f50;
+T_10 ;
+    %wait E_0x56243ffb4310;
+    %load/vec4 v0x56243ffb43c0_0;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    %load/vec4 v0x56243ffb44a0_0;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    %load/vec4 v0x56243ffb4560_0;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb4600_0;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    %load/vec4 v0x56243ffb4600_0;
+    %inv;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb43c0_0;
+    %inv;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb48d0_0;
+    %load/vec4 v0x56243ffb47f0_0;
+    %xor;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb4560_0;
+    %inv;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb43c0_0;
+    %and;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    %load/vec4 v0x56243ffb4600_0;
+    %inv;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    %load/vec4 v0x56243ffb47f0_0;
+    %inv;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb48d0_0;
+    %and;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb48d0_0;
+    %load/vec4 v0x56243ffb46c0_0;
+    %or;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %xor;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb4600_0;
+    %xor;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %or;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb4600_0;
+    %xor;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb47f0_0;
+    %load/vec4 v0x56243ffb48d0_0;
+    %and;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb47f0_0;
+    %load/vec4 v0x56243ffb43c0_0;
+    %or;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    %load/vec4 v0x56243ffb4560_0;
+    %inv;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb43c0_0;
+    %xor;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb44a0_0;
+    %or;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %xor;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb44a0_0;
+    %and;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb48d0_0;
+    %load/vec4 v0x56243ffb47f0_0;
+    %and;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb47f0_0;
+    %load/vec4 v0x56243ffb44a0_0;
+    %xor;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    %load/vec4 v0x56243ffb44a0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb47f0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    %load/vec4 v0x56243ffb43c0_0;
+    %inv;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb48d0_0;
+    %xor;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    %load/vec4 v0x56243ffb4560_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb44a0_0;
+    %and;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb43c0_0;
+    %or;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    %load/vec4 v0x56243ffb43c0_0;
+    %inv;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb47f0_0;
+    %load/vec4 v0x56243ffb46c0_0;
+    %or;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %or;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb48d0_0;
+    %load/vec4 v0x56243ffb49b0_0;
+    %xor;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb4560_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb48d0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %xor;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb46c0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffb47f0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %or;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb4600_0;
+    %xor;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb4600_0;
+    %xor;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb4560_0;
+    %xor;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb44a0_0;
+    %and;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb49b0_0;
+    %load/vec4 v0x56243ffb44a0_0;
+    %xor;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb48d0_0;
+    %load/vec4 v0x56243ffb49b0_0;
+    %xor;
+    %store/vec4 v0x56243ffb48d0_0, 0, 16;
+    %load/vec4 v0x56243ffb46c0_0;
+    %inv;
+    %store/vec4 v0x56243ffb47f0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffb46c0_0;
+    %load/vec4 v0x56243ffb47f0_0;
+    %xor;
+    %store/vec4 v0x56243ffb46c0_0, 0, 16;
+    %load/vec4 v0x56243ffb47f0_0;
+    %inv;
+    %store/vec4 v0x56243ffb49b0_0, 0, 16;
+    %load/vec4 v0x56243ffb49b0_0;
+    %store/vec4 v0x56243ffb4d30_0, 0, 16;
+    %load/vec4 v0x56243ffb48d0_0;
+    %store/vec4 v0x56243ffb4c50_0, 0, 16;
+    %load/vec4 v0x56243ffb47f0_0;
+    %store/vec4 v0x56243ffb4b70_0, 0, 16;
+    %load/vec4 v0x56243ffb46c0_0;
+    %store/vec4 v0x56243ffb4a90_0, 0, 16;
+    %jmp T_10;
+    .thread T_10, $push;
+    .scope S_0x56243ffa86f0;
+T_11 ;
+    %wait E_0x56243fee2120;
+    %load/vec4 v0x56243ffa8a60_0;
+    %store/vec4 v0x56243ffa8ea0_0, 0, 16;
+    %load/vec4 v0x56243ffa8b90_0;
+    %store/vec4 v0x56243ffa8fd0_0, 0, 16;
+    %load/vec4 v0x56243ffa8ca0_0;
+    %store/vec4 v0x56243ffa90b0_0, 0, 16;
+    %load/vec4 v0x56243ffa8d90_0;
+    %store/vec4 v0x56243ffa9190_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa8fd0_0;
+    %load/vec4 v0x56243ffa8ca0_0;
+    %and;
+    %store/vec4 v0x56243ffa8fd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa8ea0_0;
+    %load/vec4 v0x56243ffa8b90_0;
+    %and;
+    %store/vec4 v0x56243ffa8ea0_0, 0, 16;
+    %load/vec4 v0x56243ffa9190_0;
+    %store/vec4 v0x56243ffa9510_0, 0, 16;
+    %load/vec4 v0x56243ffa90b0_0;
+    %store/vec4 v0x56243ffa9430_0, 0, 16;
+    %load/vec4 v0x56243ffa8fd0_0;
+    %store/vec4 v0x56243ffa9350_0, 0, 16;
+    %load/vec4 v0x56243ffa8ea0_0;
+    %store/vec4 v0x56243ffa9270_0, 0, 16;
+    %jmp T_11;
+    .thread T_11, $push;
+    .scope S_0x56243ffa96f0;
+T_12 ;
+    %wait E_0x56243fee1c90;
+    %load/vec4 v0x56243ffa9a10_0;
+    %store/vec4 v0x56243ffa9d10_0, 0, 16;
+    %load/vec4 v0x56243ffa9af0_0;
+    %store/vec4 v0x56243ffa9e40_0, 0, 16;
+    %load/vec4 v0x56243ffa9bb0_0;
+    %store/vec4 v0x56243ffa9f20_0, 0, 16;
+    %load/vec4 v0x56243ffa9c50_0;
+    %store/vec4 v0x56243ffaa000_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffaa000_0;
+    %load/vec4 v0x56243ffa9e40_0;
+    %and;
+    %store/vec4 v0x56243ffaa000_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffa9e40_0;
+    %load/vec4 v0x56243ffa9bb0_0;
+    %and;
+    %store/vec4 v0x56243ffa9e40_0, 0, 16;
+    %load/vec4 v0x56243ffa9bb0_0;
+    %inv;
+    %store/vec4 v0x56243ffa9e40_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffa9d10_0;
+    %load/vec4 v0x56243ffa9d10_0;
+    %xor;
+    %store/vec4 v0x56243ffa9d10_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffaa000_0;
+    %load/vec4 v0x56243ffa9f20_0;
+    %and;
+    %store/vec4 v0x56243ffaa000_0, 0, 16;
+    %load/vec4 v0x56243ffaa000_0;
+    %store/vec4 v0x56243ffaa410_0, 0, 16;
+    %load/vec4 v0x56243ffa9f20_0;
+    %store/vec4 v0x56243ffaa330_0, 0, 16;
+    %load/vec4 v0x56243ffa9e40_0;
+    %store/vec4 v0x56243ffaa250_0, 0, 16;
+    %load/vec4 v0x56243ffa9d10_0;
+    %store/vec4 v0x56243ffaa0e0_0, 0, 16;
+    %jmp T_12;
+    .thread T_12, $push;
+    .scope S_0x56243ffaa5f0;
+T_13 ;
+    %wait E_0x56243fecc3a0;
+    %load/vec4 v0x56243ffaa910_0;
+    %store/vec4 v0x56243ffaae50_0, 0, 16;
+    %load/vec4 v0x56243ffaaa80_0;
+    %store/vec4 v0x56243ffaaf30_0, 0, 16;
+    %load/vec4 v0x56243ffaabd0_0;
+    %store/vec4 v0x56243ffab010_0, 0, 16;
+    %load/vec4 v0x56243ffaad00_0;
+    %store/vec4 v0x56243ffab0f0_0, 0, 16;
+    %load/vec4 v0x56243ffaaa80_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffab010_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffab010_0;
+    %load/vec4 v0x56243ffab0f0_0;
+    %or;
+    %store/vec4 v0x56243ffab010_0, 0, 16;
+    %load/vec4 v0x56243ffab0f0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffab0f0_0, 0, 16;
+    %load/vec4 v0x56243ffaaa80_0;
+    %inv;
+    %store/vec4 v0x56243ffaae50_0, 0, 16;
+    %load/vec4 v0x56243ffaae50_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffaae50_0, 0, 16;
+    %load/vec4 v0x56243ffab0f0_0;
+    %store/vec4 v0x56243ffab500_0, 0, 16;
+    %load/vec4 v0x56243ffab010_0;
+    %store/vec4 v0x56243ffab420_0, 0, 16;
+    %load/vec4 v0x56243ffaaf30_0;
+    %store/vec4 v0x56243ffab340_0, 0, 16;
+    %load/vec4 v0x56243ffaae50_0;
+    %store/vec4 v0x56243ffab1d0_0, 0, 16;
+    %jmp T_13;
+    .thread T_13, $push;
+    .scope S_0x56243ffab6e0;
+T_14 ;
+    %wait E_0x56243ffab940;
+    %load/vec4 v0x56243ffab9f0_0;
+    %store/vec4 v0x56243ffabcf0_0, 0, 16;
+    %load/vec4 v0x56243ffabad0_0;
+    %store/vec4 v0x56243ffabdd0_0, 0, 16;
+    %load/vec4 v0x56243ffabb90_0;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    %load/vec4 v0x56243ffabc30_0;
+    %store/vec4 v0x56243ffabf90_0, 0, 16;
+    %load/vec4 v0x56243ffabb90_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabcf0_0;
+    %and;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabb90_0;
+    %and;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabcf0_0;
+    %or;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabcf0_0;
+    %or;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    %load/vec4 v0x56243ffabcf0_0;
+    %inv;
+    %store/vec4 v0x56243ffabcf0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabf90_0;
+    %load/vec4 v0x56243ffab9f0_0;
+    %and;
+    %store/vec4 v0x56243ffabf90_0, 0, 16;
+    %load/vec4 v0x56243ffabcf0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffabf90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabb90_0;
+    %and;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabf90_0;
+    %load/vec4 v0x56243ffabc30_0;
+    %or;
+    %store/vec4 v0x56243ffabf90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabdd0_0;
+    %load/vec4 v0x56243ffabf90_0;
+    %or;
+    %store/vec4 v0x56243ffabdd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabcf0_0;
+    %or;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabdd0_0;
+    %load/vec4 v0x56243ffab9f0_0;
+    %or;
+    %store/vec4 v0x56243ffabdd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabf90_0;
+    %load/vec4 v0x56243ffab9f0_0;
+    %or;
+    %store/vec4 v0x56243ffabf90_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffabdd0_0;
+    %load/vec4 v0x56243ffabb90_0;
+    %xor;
+    %store/vec4 v0x56243ffabdd0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabb90_0;
+    %and;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabcf0_0;
+    %and;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffabcf0_0;
+    %load/vec4 v0x56243ffabb90_0;
+    %xor;
+    %store/vec4 v0x56243ffabcf0_0, 0, 16;
+    %load/vec4 v0x56243ffab9f0_0;
+    %inv;
+    %store/vec4 v0x56243ffabcf0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed |= operand
+    %load/vec4 v0x56243ffabcf0_0;
+    %load/vec4 v0x56243ffabad0_0;
+    %or;
+    %store/vec4 v0x56243ffabcf0_0, 0, 16;
+    %load/vec4 v0x56243ffabeb0_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed &= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabb90_0;
+    %and;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    ; show_stmt_assign_vector: Get l-value for compressed ^= operand
+    %load/vec4 v0x56243ffabeb0_0;
+    %load/vec4 v0x56243ffabcf0_0;
+    %xor;
+    %store/vec4 v0x56243ffabeb0_0, 0, 16;
+    %load/vec4 v0x56243ffabf90_0;
+    %store/vec4 v0x56243ffac3a0_0, 0, 16;
+    %load/vec4 v0x56243ffabeb0_0;
+    %store/vec4 v0x56243ffac2c0_0, 0, 16;
+    %load/vec4 v0x56243ffabdd0_0;
+    %store/vec4 v0x56243ffac1e0_0, 0, 16;
+    %load/vec4 v0x56243ffabcf0_0;
+    %store/vec4 v0x56243ffac070_0, 0, 16;
+    %jmp T_14;
+    .thread T_14, $push;
+    .scope S_0x56243ffac580;
+T_15 ;
+    %wait E_0x56243ffac870;
+    %load/vec4 v0x56243ffac920_0;
+    %store/vec4 v0x56243ffacc20_0, 0, 16;
+    %load/vec4 v0x56243ffaca00_0;
+    %store/vec4 v0x56243ffacd00_0, 0, 16;
+    %load/vec4 v0x56243ffacac0_0;
+    %store/vec4 v0x56243ffacde0_0, 0, 16;
+    %load/vec4 v0x56243ffacb60_0;
+    %store/vec4 v0x56243ffacec0_0, 0, 16;
+    %load/vec4 v0x56243ffac920_0;
+    %nor/r;
+    %pad/u 16;
+    %store/vec4 v0x56243ffacde0_0, 0, 16;
+    %load/vec4 v0x56243ffacec0_0;
+    %store/vec4 v0x56243ffad2d0_0, 0, 16;
+    %load/vec4 v0x56243ffacde0_0;
+    %store/vec4 v0x56243ffad1f0_0, 0, 16;
+    %load/vec4 v0x56243ffacd00_0;
+    %store/vec4 v0x56243ffad110_0, 0, 16;
+    %load/vec4 v0x56243ffacc20_0;
+    %store/vec4 v0x56243ffacfa0_0, 0, 16;
+    %jmp T_15;
+    .thread T_15, $push;
+    .scope S_0x56243feea1d0;
+T_16 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x56243ffb6140_0, 0, 32;
+    %end;
+    .thread T_16, $init;
+    .scope S_0x56243feea1d0;
+T_17 ;
+    %wait E_0x56243fee31f0;
+    %load/vec4 v0x56243ffb5fc0_0;
+    %pad/u 32;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_17.0, 4;
+    %ix/getv/s 4, v0x56243ffb6140_0;
+    %load/vec4a v0x56243ffb6080, 4;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb65a0_0, 0, 16;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb6a30_0, 0, 16;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb6ec0_0, 0, 16;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb7350_0, 0, 16;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb5c90_0, 0, 16;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb5d30_0, 0, 16;
+    %split/vec4 16;
+    %store/vec4 v0x56243ffb5af0_0, 0, 16;
+    %store/vec4 v0x56243ffb5bd0_0, 0, 16;
+    %load/vec4 v0x56243ffb6140_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x56243ffb6140_0, 0, 32;
+T_17.0 ;
+    %jmp T_17;
+    .thread T_17;
+    .scope S_0x56243feea1d0;
+T_18 ;
+    %wait E_0x56243fee31f0;
+    %load/vec4 v0x56243ffb5fc0_0;
+    %pad/u 32;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_18.0, 4;
+    %load/vec4 v0x56243ffb5bd0_0;
+    %store/vec4 v0x56243ffb54a0_0, 0, 16;
+    %load/vec4 v0x56243ffb5af0_0;
+    %store/vec4 v0x56243ffb53a0_0, 0, 16;
+    %load/vec4 v0x56243ffb5d30_0;
+    %store/vec4 v0x56243ffb5640_0, 0, 16;
+    %load/vec4 v0x56243ffb5c90_0;
+    %store/vec4 v0x56243ffb5580_0, 0, 16;
+    %load/vec4 v0x56243ffb7350_0;
+    %store/vec4 v0x56243ffb5a10_0, 0, 16;
+    %load/vec4 v0x56243ffb6ec0_0;
+    %store/vec4 v0x56243ffb5930_0, 0, 16;
+    %load/vec4 v0x56243ffb6a30_0;
+    %store/vec4 v0x56243ffb5850_0, 0, 16;
+    %load/vec4 v0x56243ffb65a0_0;
+    %store/vec4 v0x56243ffb5720_0, 0, 16;
+    %fork TD_testbench.testcase, S_0x56243ffb4f10;
+    %join;
+T_18.0 ;
+    %jmp T_18;
+    .thread T_18;
+    .scope S_0x56243feea1d0;
+T_19 ;
+    %delay 5, 0;
+    %load/vec4 v0x56243ffb5df0_0;
+    %inv;
+    %store/vec4 v0x56243ffb5df0_0, 0, 1;
+    %jmp T_19;
+    .thread T_19;
+    .scope S_0x56243feea1d0;
+T_20 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56243ffb5df0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56243ffb5fc0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56243ffb5fc0_0, 0, 1;
+    %vpi_call/w 3 125 "$readmemb", "template/test_vectors.tv", v0x56243ffb6080 {0 0 0};
+    %vpi_call/w 3 127 "$writememb", "tmp/memory_b.txt", v0x56243ffb6080 {0 0 0};
+    %fork t_3, S_0x56243feea360;
+    %jmp t_2;
+    .scope S_0x56243feea360;
+t_3 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x56243fefb0c0_0, 0, 32;
+T_20.0 ;
+    %load/vec4 v0x56243fefb0c0_0;
+    %cmpi/s 15, 0, 32;
+    %jmp/0xz T_20.1, 5;
+    %pushi/vec4 0, 0, 32;
+    %ix/getv/s 4, v0x56243fefb0c0_0;
+    %store/vec4a v0x56243ffb5f00, 4, 0;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x56243fefb0c0_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %cast2;
+    %store/vec4 v0x56243fefb0c0_0, 0, 32;
+    %jmp T_20.0;
+T_20.1 ;
+    %end;
+    .scope S_0x56243feea1d0;
+t_2 %join;
+    %delay 20, 0;
+    %fork t_5, S_0x56243ffa6c70;
+    %jmp t_4;
+    .scope S_0x56243ffa6c70;
+t_5 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x56243feff600_0, 0, 32;
+T_20.2 ;
+    %load/vec4 v0x56243feff600_0;
+    %cmpi/s 15, 0, 32;
+    %jmp/0xz T_20.3, 5;
+    %vpi_call/w 3 139 "$display", "%0d", &A<v0x56243ffb5f00, v0x56243feff600_0 > {0 0 0};
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x56243feff600_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %cast2;
+    %store/vec4 v0x56243feff600_0, 0, 32;
+    %jmp T_20.2;
+T_20.3 ;
+    %end;
+    .scope S_0x56243feea1d0;
+t_4 %join;
+    %vpi_call/w 3 142 "$finish" {0 0 0};
+    %end;
+    .thread T_20;
+# The file index is used to find the file name in the following table.
+:file_names 19;
+    "N/A";
+    "<interactive>";
+    "-";
+    "tmp/testbench.sv";
+    "./tmp/individual_0.sv";
+    "./tmp/individual_1.sv";
+    "./tmp/individual_10.sv";
+    "./tmp/individual_11.sv";
+    "./tmp/individual_12.sv";
+    "./tmp/individual_13.sv";
+    "./tmp/individual_14.sv";
+    "./tmp/individual_2.sv";
+    "./tmp/individual_3.sv";
+    "./tmp/individual_4.sv";
+    "./tmp/individual_5.sv";
+    "./tmp/individual_6.sv";
+    "./tmp/individual_7.sv";
+    "./tmp/individual_8.sv";
+    "./tmp/individual_9.sv";

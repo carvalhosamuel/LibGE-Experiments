@@ -1,0 +1,7 @@
+<begin>                     ::= "always @(posedge clk) begin\nif(rst == 1) begin\nq = 3'b000;\nend\nelse begin\ncase(sel)\n"<statement><end>
+<end>                       ::= "endcase\nend\nend"
+<statement>                 ::= "1'b0: q = "<expr>";\n1'b1: q = "<expr>";\n"
+<expr>                      ::= <var1><op><var2>
+<var1>                      ::= "q"
+<var2>                      ::= "1"
+<op>                        ::= "+" | "-"

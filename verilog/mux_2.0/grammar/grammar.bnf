@@ -1,0 +1,6 @@
+<statement> ::= <output>"="<test-expression>";"<nextline>
+<output> ::= "out"
+<test-expression> ::= "("<address-bit>"?"<test-expression>":"<test-expression>")" | <data-bit>
+<address-bit> ::= a0 | a1 | a2
+<data-bit> ::= d0 | d1 | d2 | d3 | d4 | d5 | d6 | d7
+<nextline> ::= "\n"

@@ -1,0 +1,7 @@
+<final>         ::= <parameters> "\n" <combinational> "\n" <sequential> 
+<parameters>    ::= "reg [2:0]state = 3'b000; \n reg [2:0]next = 3'b000; \n parameter S0 = 3'b000; \n parameter S1 = 3'b001;\n parameter S2 = 3'b011;\n parameter S3 = 3'b010;\nparameter S4 = 3'b110;"	 
+<combinational> ::= "always @ (state or i or reset) \n case(state) \n " "S0 : \n " <states_block> "\n  S1 : \n " <states_block> "\n  S2 : \n " <states_block> "\n  S3 : \n " <states_block> " \n   S4 : \n " <states_block> "\n endcase \n" 
+<sequential>    ::= "always @ (posedge clock) \n if (next == S4) \n begin \n $display(\"%b_%b\", i, out); \n state <= next; \n out <=  \"1\"; \n end \n else \n begin \n $display(\"%b_%b\", i, out); \n state <= next; \n out <= \"0\"; \n end \n"    
+<states_block>  ::= "if (reset == 1) \n begin \n next = S0; \n end \n else if(i == 1) \n begin \n next = " <state> "; \n end \n else if (i == 0) \n begin \n next = " <state> "; \n end \n" 
+<state>         ::= "S0" | "S1" | "S2" | "S3" | "S4"
+<out>           ::= "0" | "1"

@@ -1,0 +1,4 @@
+diff out test_vectors.tv | wc -l | awk '{ print $1/4 }'
+
+diff out test_vectors.tv | grep "^>" | wc -l
+

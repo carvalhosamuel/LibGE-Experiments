@@ -1,0 +1,23 @@
+<statement>                 ::= <blocking-statement-sum><nextline><blocking-statement-co>
+<blocking-statement-sum>    ::= "assign sum = "<rhs>";"
+<blocking-statement-co>     ::= "assign co = "<rhs>";"
+<rhs>                       ::= <binary-op> | <logical-not>
+<binary-op>                 ::= <bitwise-and> | <bitwise-or> | <bitwise-xor>
+<bitwise-and>               ::= "(("<argument>")&("<argument>"))"
+<bitwise-or>                ::= "(("<argument>")|("<argument>"))"
+<bitwise-xor>               ::= "(("<argument>")^("<argument>"))"
+<logical-not>               ::= "!("<argument>")"
+<argument>                  ::= <invar> | <binary-op-out> | <logical-not-out>
+<argument-out>              ::= <invar> | <binary-op-in> | <logical-not-in>
+<binary-op-out>             ::= <bitwise-and-out> | <bitwise-or-out> | <bitwise-xor-out>
+<bitwise-and-out>           ::= "("<argument-out>"&"<argument-out>")"
+<bitwise-or-out>            ::= "("<argument-out>"|"<argument-out>")"
+<bitwise-xor-out>           ::= "("<argument-out>"^"<argument-out>")"
+<binary-op-in>              ::= <bitwise-and-in> | <bitwise-or-in> | <bitwise-xor-in>
+<bitwise-and-in>            ::= "("<invar>"&"<invar>")"
+<bitwise-or-in>             ::= "("<invar>"|"<invar>")"
+<bitwise-xor-in>            ::= "("<invar>"^"<invar>")"
+<logical-not-out>           ::= "!("<argument-out>")"
+<logical-not-in>            ::= "!("<invar>")"
+<invar>                     ::= "a" | "b" | "ci"
+<nextline>                  ::= "\n"

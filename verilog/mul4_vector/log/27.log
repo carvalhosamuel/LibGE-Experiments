@@ -1,0 +1,1737 @@
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Random Seed: 3184600242
+Generations: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 
+150	# current generation
+0.982143	# current convergence
+15000	# number of selections since initialization
+15000	# number of crossovers since initialization
+6052336	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+56	# maximum score since initialization
+30	# minimum score since initialization
+52.406	# average of all scores ('on-line' performance)
+54.62	# average of maximum scores ('off-line' performance)
+51.46	# average of minimum scores ('off-line' performance)
+
+40.97	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.60447	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+54.21	# mean score in current population
+56	# maximum score in current population
+54	# minimum score in current population
+0.433334	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r0  &=  b0 ;
+ 	 r2 = ! r1 ;
+ 	 r2 = ! r0 ;
+ 	 r3  &=  r2 ;
+ 	 r1  ^=  b1 ;
+ 	 r3  ^=  r3 ;
+ 	 r1  &=  b0 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  50 127 172 117 226 190 66 214 67 57 154 76 234 155 68 154 26 43 89 162 32 217 9 214 27 90 160 147 146 151 249 173 65 25 250 33 212 21 146 239 58 34 226 52 207 251 2 25 61 156 177 140 72 10 108 50 54 168 97 74 210 171 220 98 197 61 133 49 47 229 135 174 3 241 86 62 31 222 70 119 127 23 117 17 38 109 18 107 216 112 79 128 81 230 197 169 238 129 226 111 181 176 84 92 32 83 70 24 4 15 63 4 51 60 151 34 254 0 207 250 167 5 215 64 96 158 123 11 176 61 30 164 213 234 47 212 152 77 151 6 199 190 65 11 230 105 89 223 145 160 213 189 35 185 194 248 166 157 71 215 87 249 219 218 76 63 63 13 97 145 220 196 72 169 183 126 200 176 203 175 199 172 126 152 159 144 26 163 164 181 181 179 201 243 238 160 202 49 216 252 158 146 98 101 3 50 164 239 157 146 86 234 27 72 164 166 207 178 190 104 75 189 180 60 97 140 187 219 137 2 47 213 48 38 97 127 144 117 174 201 137 157 129 49 120 12 231 244 9 200 146 31 31 244 205 114 181 156 12 78 73 255 35 136 40 158 170 213 152 113 139 131 220 63 90 123 168 201 235 177 36 119 66 96 166 51 48 162 133 246 103 102 152 2 181 208 203 69 62 65 250 199 172 195 247 146 131 29 73 57 88 108 162 204 135 233 243 132 150 170 123 46 166 137 121 157 107 82 32 7 254 47 18 165 25 31 121 96 5 44 125 3 101 60 241 130 35 181 215 169 85 68 181 174 43 75 255
+Total length     = 357
+Effective length = 35
+Wrapping events = 0
+Time taken: 0:0:14 -> 0 hours, 0 minutes, 14 seconds.
+14.7297
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:40
+Random Seed: 908982552
+Generations: Sloth:30
+1 Sloth:28
+2 Sloth:30
+3 Sloth:28
+4 Sloth:32
+5 Sloth:30
+6 Sloth:30
+7 Sloth:32
+8 Sloth:32
+9 Sloth:28
+10 Sloth:30
+11 Sloth:30
+12 Sloth:28
+13 Sloth:28
+14 Sloth:30
+15 Sloth:30
+16 Sloth:26
+17 Sloth:28
+18 Sloth:30
+19 Sloth:26
+20 Sloth:28
+21 Sloth:28
+22 Sloth:30
+23 Sloth:30
+24 Sloth:30
+25 Sloth:26
+26 Sloth:28
+27 Sloth:26
+28 Sloth:28
+29 Sloth:30
+30 Sloth:30
+31 Sloth:26
+32 Sloth:30
+33 Sloth:26
+34 Sloth:26
+35 Sloth:26
+36 Sloth:26
+37 Sloth:26
+38 Sloth:24
+39 Sloth:28
+40 Sloth:26
+41 Sloth:26
+42 Sloth:28
+43 Sloth:24
+44 Sloth:28
+45 Sloth:26
+46 Sloth:28
+47 Sloth:26
+48 Sloth:26
+49 Sloth:26
+50 Sloth:26
+51 Sloth:26
+52 Sloth:26
+53 Sloth:30
+54 Sloth:28
+55 Sloth:26
+56 Sloth:26
+57 Sloth:22
+58 Sloth:28
+59 Sloth:26
+60 Sloth:26
+61 Sloth:24
+62 Sloth:30
+63 Sloth:30
+64 Sloth:26
+65 Sloth:26
+66 Sloth:26
+67 Sloth:29
+68 Sloth:28
+69 Sloth:28
+70 Sloth:24
+71 Sloth:26
+72 Sloth:28
+73 Sloth:28
+74 Sloth:26
+75 Sloth:30
+76 Sloth:24
+77 Sloth:26
+78 Sloth:26
+79 Sloth:26
+80 Sloth:28
+81 Sloth:26
+82 Sloth:28
+83 Sloth:26
+84 Sloth:26
+85 Sloth:26
+86 Sloth:24
+87 Sloth:27
+88 Sloth:24
+89 Sloth:22
+90 Sloth:30
+91 Sloth:22
+92 Sloth:26
+93 Sloth:26
+94 Sloth:26
+95 Sloth:26
+96 Sloth:28
+97 Sloth:26
+98 Sloth:26
+99 Sloth:24
+100 Sloth:26
+101 Sloth:24
+102 Sloth:26
+103 Sloth:26
+104 Sloth:26
+105 Sloth:26
+106 Sloth:30
+107 Sloth:26
+108 Sloth:22
+109 Sloth:26
+110 Sloth:26
+111 Sloth:26
+112 Sloth:22
+113 Sloth:26
+114 Sloth:26
+115 Sloth:26
+116 Sloth:26
+117 Sloth:24
+118 Sloth:26
+119 Sloth:24
+120 Sloth:26
+121 Sloth:28
+122 Sloth:26
+123 Sloth:24
+124 Sloth:26
+125 Sloth:26
+126 Sloth:26
+127 Sloth:26
+128 Sloth:24
+129 Sloth:28
+130 Sloth:28
+131 Sloth:26
+132 Sloth:26
+133 Sloth:26
+134 Sloth:26
+135 Sloth:26
+136 Sloth:22
+137 Sloth:26
+138 Sloth:22
+139 Sloth:24
+140 Sloth:28
+141 Sloth:26
+142 Sloth:26
+143 Sloth:26
+144 Sloth:26
+145 Sloth:26
+146 Sloth:24
+147 Sloth:26
+148 Sloth:26
+149 Sloth:26
+150 
+150	# current generation
+1	# current convergence
+15000	# number of selections since initialization
+15000	# number of crossovers since initialization
+5879608	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+55	# maximum score since initialization
+30	# minimum score since initialization
+52.1571	# average of all scores ('on-line' performance)
+54.32	# average of maximum scores ('off-line' performance)
+51.1867	# average of minimum scores ('off-line' performance)
+
+41.07	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.69097	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+54.16	# mean score in current population
+55	# maximum score in current population
+54	# minimum score in current population
+0.368452	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r3 = ! r3 ;
+ 	 r3  ^=  a1 ;
+ 	 r0  &=  r2 ;
+ 	 r2 = ! b1 ;
+ 	 r3 = ! r2 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  140 140 99 143 43 6 105 139 54 245 6 128 244 13 202 218 227 54 183 175 87 240 135 251 90 238 92 198 142 142 101 178 250 122 11 162 177 248 104 56 146 63 170 134 201 117 154 61 6 115 205 159 231 203 32 200 235 43 168 15 84 110 64 26 161 31 37 131 246 143 254 215 66 81 212 166 155 117 199 176 172 252 125 198 85 185 119 123 45 13 44 169 141 86 174 72 174 116 206 32 175 80 146 224 54 251 18 181 119 230 124 176 227 181 170 85 200 23 249 92 1 139 232 5 114 225 67 133 98 2 244 16 252 199 236 167 82 12 250 88 106 129 155 243 58 28 30 146 122 117 63 252 163 108 149 34 213 183 2 127 164 3 133 254 133 9 29 223 68 46 139 182 3
+Total length     = 173
+Effective length = 25
+Wrapping events = 0
+Time taken: 0:0:15 -> 0 hours, 0 minutes, 15 seconds.
+15.3076
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:44
+Random Seed: 3126259708
+Generations: Sloth:39
+1 Sloth:40
+2 Sloth:38
+3 Sloth:42
+4 Sloth:42
+5 Sloth:42
+6 Sloth:42
+7 Sloth:40
+8 Sloth:42
+9 Sloth:42
+10 Sloth:43
+11 Sloth:42
+12 Sloth:42
+13 Sloth:44
+14 Sloth:42
+15 Sloth:42
+16 Sloth:42
+17 Sloth:44
+18 Sloth:42
+19 Sloth:42
+20 Sloth:43
+21 Sloth:44
+22 Sloth:44
+23 Sloth:44
+24 Sloth:44
+25 Sloth:42
+26 Sloth:42
+27 Sloth:42
+28 Sloth:43
+29 Sloth:42
+30 Sloth:42
+31 Sloth:44
+32 Sloth:42
+33 Sloth:42
+34 Sloth:42
+35 Sloth:42
+36 Sloth:42
+37 Sloth:44
+38 Sloth:43
+39 Sloth:42
+40 Sloth:42
+41 Sloth:42
+42 Sloth:42
+43 Sloth:42
+44 Sloth:42
+45 Sloth:42
+46 Sloth:42
+47 Sloth:42
+48 Sloth:42
+49 Sloth:42
+50 Sloth:42
+51 Sloth:42
+52 Sloth:42
+53 Sloth:44
+54 Sloth:43
+55 Sloth:44
+56 Sloth:42
+57 Sloth:40
+58 Sloth:42
+59 Sloth:42
+60 Sloth:42
+61 Sloth:42
+62 Sloth:42
+63 Sloth:43
+64 Sloth:42
+65 Sloth:42
+66 Sloth:40
+67 Sloth:40
+68 Sloth:42
+69 Sloth:42
+70 Sloth:42
+71 Sloth:42
+72 Sloth:40
+73 Sloth:42
+74 Sloth:42
+75 Sloth:40
+76 Sloth:44
+77 Sloth:42
+78 Sloth:40
+79 Sloth:44
+80 Sloth:42
+81 Sloth:44
+82 Sloth:42
+83 Sloth:44
+84 Sloth:42
+85 Sloth:44
+86 Sloth:42
+87 Sloth:43
+88 Sloth:40
+89 Sloth:42
+90 Sloth:42
+91 Sloth:42
+92 Sloth:42
+93 Sloth:42
+94 Sloth:42
+95 Sloth:42
+96 Sloth:42
+97 Sloth:42
+98 Sloth:42
+99 Sloth:42
+100 Sloth:42
+101 Sloth:42
+102 Sloth:42
+103 Sloth:42
+104 Sloth:42
+105 Sloth:40
+106 Sloth:40
+107 Sloth:42
+108 Sloth:42
+109 Sloth:42
+110 Sloth:42
+111 Sloth:42
+112 Sloth:42
+113 Sloth:42
+114 Sloth:44
+115 Sloth:42
+116 Sloth:42
+117 Sloth:42
+118 Sloth:43
+119 Sloth:42
+120 Sloth:42
+121 Sloth:42
+122 Sloth:42
+123 Sloth:42
+124 Sloth:42
+125 Sloth:42
+126 Sloth:42
+127 Sloth:42
+128 Sloth:42
+129 Sloth:42
+130 Sloth:44
+131 Sloth:42
+132 Sloth:42
+133 Sloth:42
+134 Sloth:42
+135 Sloth:42
+136 Sloth:42
+137 Sloth:40
+138 Sloth:40
+139 Sloth:42
+140 Sloth:42
+141 Sloth:42
+142 Sloth:42
+143 Sloth:44
+144 Sloth:42
+145 Sloth:42
+146 Sloth:42
+147 Sloth:42
+148 Sloth:42
+149 Sloth:42
+150 
+150	# current generation
+1	# current convergence
+15000	# number of selections since initialization
+15000	# number of crossovers since initialization
+4674914	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+55	# maximum score since initialization
+30	# minimum score since initialization
+52.3127	# average of all scores ('on-line' performance)
+54.2867	# average of maximum scores ('off-line' performance)
+51.22	# average of minimum scores ('off-line' performance)
+
+41.03	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.68278	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+54.08	# mean score in current population
+55	# maximum score in current population
+54	# minimum score in current population
+0.27266	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r3  &=  r2 ;
+ 	 r2  &=  r0 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  242 202 43 241 246 159 170 22 37 80 189 62 241 165 60 92 98 246 29 185 78 60 180 44 253 230 163 238 29 179 231 5 205 23 214 205 233 175 34 246 146 126 197 157 137 161 5 155 128 222 198 199 197 228 222 87 120 123 236 93 125 155 248 152 71 250 75 56 78 154 40 206 15 132 157 206 170 62 59 74 180 112 235 58 186 68 140 4 151 123 244 161 43 55 20 222 161 199 15 92 43 255 31 13 225 134 128 150 13 76 34 86 225 19 52 6 136 214 95 250 86 131 28 154 96 22 151 233 173 245 162 221 157 149 107 103 190 63 54 43 96 102 250 114 168 150 211 223 171 12 68 147 2 11 165 238 4 245 186 230 199 6 74 50 0 242 28 75 189 136 3 228 249 45 126 87 64 120 125 29 248 98 192 79 162 106 212 158 236 134 200 36 224 90 41 161 228 155 4 243 225 84 98 87 43 56 34 96 55 38 17 44 224 19 180 106 39 88 62 138 55 161 173 32 71 240 43 54 115 239 78 47 144 72 111 184 204 248 92 86 54 117 203 163 228 118 236 11 161 238 48 18 30 203 16 163 118 195 32 252 93 250 226 207 136 129 2 201 197 34 117 133 125 117 98 206 53
+Total length     = 277
+Effective length = 10
+Wrapping events = 0
+Time taken: 0:0:12 -> 0 hours, 0 minutes, 12 seconds.
+12.5496
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:38
+Random Seed: 3179836620
+Generations: Sloth:0
+1 Sloth:0
+2 Sloth:0
+3 Sloth:0
+4 Sloth:0
+5 Sloth:0
+6 Sloth:0
+7 Sloth:0
+8 Sloth:0
+9 Sloth:0
+10 Sloth:0
+11 Sloth:0
+12 Sloth:0
+13 Sloth:0
+14 Sloth:0
+15 Sloth:0
+16 Sloth:0
+17 Sloth:0
+18 Sloth:0
+19 Sloth:0
+20 Sloth:0
+21 Sloth:0
+22 Sloth:0
+23 Sloth:0
+24 Sloth:0
+25 Sloth:0
+26 Sloth:0
+27 Sloth:0
+28 Sloth:0
+29 Sloth:0
+30 Sloth:0
+31 Sloth:0
+32 Sloth:0
+33 Sloth:0
+34 Sloth:0
+35 Sloth:0
+36 Sloth:0
+37 Sloth:0
+38 Sloth:0
+39 Sloth:0
+40 Sloth:0
+41 Sloth:0
+42 Sloth:0
+43 Sloth:0
+44 Sloth:0
+45 Sloth:0
+46 Sloth:0
+47 Sloth:0
+48 Sloth:0
+49 Sloth:0
+50 Sloth:0
+51 Sloth:0
+52 Sloth:0
+53 Sloth:0
+54 Sloth:0
+55 Sloth:0
+56 Sloth:0
+57 Sloth:0
+58 Sloth:0
+59 Sloth:0
+60 Sloth:0
+61 Sloth:0
+62 Sloth:0
+63 Sloth:0
+64 Sloth:0
+65 Sloth:0
+66 Sloth:0
+67 Sloth:0
+68 Sloth:0
+69 Sloth:0
+70 Sloth:0
+71 Sloth:0
+72 Sloth:0
+73 Sloth:0
+74 Sloth:0
+75 Sloth:0
+76 Sloth:0
+77 Sloth:0
+78 Sloth:0
+79 Sloth:0
+80 Sloth:0
+81 Sloth:0
+82 Sloth:0
+83 Sloth:0
+84 Sloth:0
+85 Sloth:0
+86 Sloth:0
+87 Sloth:0
+88 Sloth:0
+89 Sloth:0
+90 Sloth:0
+91 Sloth:0
+92 Sloth:0
+93 Sloth:0
+94 Sloth:0
+95 Sloth:0
+96 Sloth:0
+97 Sloth:0
+98 Sloth:0
+99 Sloth:0
+100 Sloth:0
+101 Sloth:0
+102 Sloth:0
+103 Sloth:0
+104 Sloth:0
+105 Sloth:0
+106 Sloth:0
+107 Sloth:0
+108 Sloth:0
+109 Sloth:0
+110 Sloth:0
+111 Sloth:0
+112 Sloth:0
+113 Sloth:0
+114 Sloth:0
+115 Sloth:0
+116 Sloth:0
+117 Sloth:0
+118 Sloth:0
+119 Sloth:0
+120 Sloth:0
+121 Sloth:0
+122 Sloth:0
+123 Sloth:0
+124 Sloth:0
+125 Sloth:0
+126 Sloth:0
+127 Sloth:0
+128 Sloth:0
+129 Sloth:0
+130 Sloth:0
+131 Sloth:0
+132 Sloth:0
+133 Sloth:0
+134 Sloth:0
+135 Sloth:0
+136 Sloth:0
+137 Sloth:0
+138 Sloth:0
+139 Sloth:0
+140 Sloth:0
+141 Sloth:0
+142 Sloth:0
+143 Sloth:0
+144 Sloth:0
+145 Sloth:0
+146 Sloth:0
+147 Sloth:0
+148 Sloth:0
+149 Sloth:0
+150 
+150	# current generation
+1	# current convergence
+15000	# number of selections since initialization
+15000	# number of crossovers since initialization
+4854943	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+56	# maximum score since initialization
+30	# minimum score since initialization
+52.1315	# average of all scores ('on-line' performance)
+54.8067	# average of maximum scores ('off-line' performance)
+51.1533	# average of minimum scores ('off-line' performance)
+
+41.09	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.682	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+54.15	# mean score in current population
+56	# maximum score in current population
+54	# minimum score in current population
+0.411329	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r0  &=  r2 ;
+ 	 r3 = ! r1 ;
+ 	 r2 = ! b1 ;
+ 	 r1  &=  b0 ;
+ 	 r1  &=  a1 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  128 120 156 81 158 170 156 3 67 93 18 229 94 135 215 206 185 129 109 54 13 195 117 5 165 72 205 69 211 35 210 221 12 174 254 197 44 6 9 8 91 36 58 238 67 124 188 250 179 251 229 212 252 255 136 250 13 108 200 202 224 211 226 155 87 114 88 136 0 45 123 247 86 12 34 185 199 80 40 88 200 142 51 179 49 107 137 56 64 47 105 60 81 89 91 236 107 129 31 86 147 127 247 15 224 154 193 198 240 230 22 223 0 118 84 167 76 1 36 170 245 83 144 70
+Total length     = 124
+Effective length = 25
+Wrapping events = 0
+Time taken: 0:0:12 -> 0 hours, 0 minutes, 12 seconds.
+12.7807
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:38
+Random Seed: 1365758903
+Generations: Sloth:0
+1 Sloth:0
+2 Sloth:0
+3 Sloth:0
+4 Sloth:0
+5 Sloth:0
+6 Sloth:0
+7 Sloth:0
+8 Sloth:0
+9 Sloth:0
+10 Sloth:0
+11 Sloth:0
+12 Sloth:0
+13 Sloth:0
+14 Sloth:0
+15 Sloth:0
+16 Sloth:0
+17 Sloth:0
+18 Sloth:0
+19 Sloth:0
+20 Sloth:0
+21 Sloth:0
+22 Sloth:0
+23 Sloth:0
+24 Sloth:0
+25 Sloth:0
+26 Sloth:0
+27 Sloth:0
+28 Sloth:0
+29 Sloth:0
+30 Sloth:0
+31 Sloth:0
+32 Sloth:0
+33 Sloth:0
+34 Sloth:0
+35 Sloth:0
+36 Sloth:0
+37 Sloth:0
+38 Sloth:0
+39 Sloth:0
+40 Sloth:0
+41 Sloth:0
+42 Sloth:0
+43 Sloth:0
+44 Sloth:0
+45 Sloth:0
+46 Sloth:0
+47 Sloth:0
+48 Sloth:0
+49 Sloth:0
+50 Sloth:0
+51 Sloth:0
+52 Sloth:0
+53 Sloth:0
+54 Sloth:0
+55 Sloth:0
+56 Sloth:0
+57 Sloth:0
+58 Sloth:0
+59 Sloth:0
+60 Sloth:0
+61 Sloth:0
+62 Sloth:0
+63 Sloth:0
+64 Sloth:0
+65 Sloth:0
+66 Sloth:0
+67 Sloth:0
+68 Sloth:0
+69 Sloth:0
+70 Sloth:0
+71 Sloth:0
+72 Sloth:0
+73 Sloth:0
+74 Sloth:0
+75 Sloth:0
+76 Sloth:0
+77 Sloth:0
+78 Sloth:0
+79 Sloth:0
+80 Sloth:0
+81 Sloth:0
+82 Sloth:0
+83 Sloth:0
+84 Sloth:0
+85 Sloth:0
+86 Sloth:0
+87 Sloth:0
+88 Sloth:0
+89 Sloth:0
+90 Sloth:0
+91 Sloth:0
+92 Sloth:0
+93 Sloth:0
+94 Sloth:0
+95 Sloth:0
+96 Sloth:0
+97 Sloth:0
+98 Sloth:0
+99 Sloth:0
+100 Sloth:0
+101 Sloth:0
+102 Sloth:0
+103 Sloth:0
+104 Sloth:0
+105 Sloth:0
+106 Sloth:0
+107 Sloth:0
+108 Sloth:0
+109 Sloth:0
+110 Sloth:0
+111 Sloth:0
+112 Sloth:0
+113 Sloth:0
+114 Sloth:0
+115 Sloth:0
+116 Sloth:0
+117 Sloth:0
+118 Sloth:0
+119 Sloth:0
+120 Sloth:0
+121 Sloth:0
+122 Sloth:0
+123 Sloth:0
+124 Sloth:0
+125 Sloth:0
+126 Sloth:0
+127 Sloth:0
+128 Sloth:0
+129 Sloth:0
+130 Sloth:0
+131 Sloth:0
+132 Sloth:0
+133 Sloth:0
+134 Sloth:0
+135 Sloth:0
+136 Sloth:0
+137 Sloth:0
+138 Sloth:0
+139 Sloth:0
+140 Sloth:0
+141 Sloth:0
+142 Sloth:0
+143 Sloth:0
+144 Sloth:0
+145 Sloth:0
+146 Sloth:0
+147 Sloth:0
+148 Sloth:0
+149 Sloth:0
+150 
+150	# current generation
+1	# current convergence
+15000	# number of selections since initialization
+12092	# number of crossovers since initialization
+7447679	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+55	# maximum score since initialization
+30	# minimum score since initialization
+51.0709	# average of all scores ('on-line' performance)
+54.5933	# average of maximum scores ('off-line' performance)
+49.74	# average of minimum scores ('off-line' performance)
+
+41.09	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.682	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+52.68	# mean score in current population
+55	# maximum score in current population
+51	# minimum score in current population
+1.22993	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r3  ^=  a1 ;
+ 	 r2 = ! r3 ;
+ 	 r0  &=  b0 ;
+ 	 r3 = ! r2 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  38 169 59 194 201 226 30 38 183 47 140 191 176 189 10 99 74 187 235 138 44 4 57 100 213 76 107 99 245 108 89 90 112 72 173 155 204 145 146 16 7 96 244 56 117 240 234 182 174 138 20 114 219 231 40 138 93 226 234 111 231 99 140 113 204 225 17 242 72 149 241 195 127 64 212 221 119 163 6 54 212 22 139 108 65 52 254 60 28 34 49 102 43 33 93 44 244 228 25 105 69 126 167 80 12 173 2 220 93 174 240 234 118 10 45 23 74 211 105 211 5 67 237 163 27 200 24 207 184 202 202 154 170 158 193 92 135 54 244 144 239 215 46 103 196 157 161 63 52 86 123 186 150 42 136 228 211 231 226 24 164 88 199 52 205 24 220 217 129 11 91 103 71 182 123 223 15 83 223 163 50 158 69 199 71 11 235 135 253 210 249 249 79 50 223 11 203 189 117 81 119 15 95 107 64 120 101 234 130 14 96 141 27 129 120 214 191 231 210 240 159 188 145 124 54 116 191 92 122 69 206 132 16 35 55 207 217 14 156 235 102 72 123 35 45 116 226 80 70 32 35 67 162 116 48 208 25 39 56 106 156 111 220 117 168 3 177 189 75 57 123 236 245 88 72 210 39 55 227 23 67 10 192 147 68 148 39 16 211 221 148 87 228 124 117 20 124 79 152 135 7 246 139 25 158 40 30 4 184 188 190 56 23 76 83 53 183 165 131 139 45 48 155 182 252 116 22 85 92 107 73 0 109 120 102 37 163 252 141 113 163 31 131 162 81 6 159 138 203 219 31 43 31 213 49 107 255 38 67 130 219 192 175 29 23 149 44 34 216 211 79 167 2 198 236 249 46 19 81 161 65 148 76 236 216 8 165 158 210 128 170 69 101 223 55 57 209 94 108 252 89 67 63 18 189 155 248 12 147 84 24 83 80 6 29 21 7 82 141 112 195 32 240 88 96 202 204
+Total length     = 427
+Effective length = 20
+Wrapping events = 0
+Time taken: 0:0:13 -> 0 hours, 0 minutes, 13 seconds.
+13.5362
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:40
+Random Seed: 2853124636
+Generations: Sloth:30
+1 Sloth:28
+2 Sloth:30
+3 Sloth:27
+4 Sloth:25
+5 Sloth:28
+6 Sloth:30
+7 Sloth:30
+8 Sloth:30
+9 Sloth:34
+10 Sloth:34
+11 Sloth:28
+12 Sloth:30
+13 Sloth:28
+14 Sloth:28
+15 Sloth:30
+16 Sloth:26
+17 Sloth:26
+18 Sloth:30
+19 Sloth:30
+20 Sloth:30
+21 Sloth:28
+22 Sloth:30
+23 Sloth:28
+24 Sloth:24
+25 Sloth:28
+26 Sloth:26
+27 Sloth:32
+28 Sloth:30
+29 Sloth:28
+30 Sloth:26
+31 Sloth:30
+32 Sloth:30
+33 Sloth:30
+34 Sloth:30
+35 Sloth:30
+36 Sloth:30
+37 Sloth:34
+38 Sloth:30
+39 Sloth:34
+40 Sloth:30
+41 Sloth:26
+42 Sloth:30
+43 Sloth:30
+44 Sloth:30
+45 Sloth:26
+46 Sloth:32
+47 Sloth:30
+48 Sloth:32
+49 Sloth:26
+50 Sloth:30
+51 Sloth:30
+52 Sloth:30
+53 Sloth:30
+54 Sloth:24
+55 Sloth:30
+56 Sloth:28
+57 Sloth:30
+58 Sloth:30
+59 Sloth:26
+60 Sloth:29
+61 Sloth:30
+62 Sloth:28
+63 Sloth:30
+64 Sloth:30
+65 Sloth:30
+66 Sloth:28
+67 Sloth:26
+68 Sloth:28
+69 Sloth:26
+70 Sloth:30
+71 Sloth:30
+72 Sloth:24
+73 Sloth:28
+74 Sloth:30
+75 Sloth:26
+76 Sloth:26
+77 Sloth:30
+78 Sloth:28
+79 Sloth:30
+80 Sloth:26
+81 Sloth:28
+82 Sloth:28
+83 Sloth:32
+84 Sloth:30
+85 Sloth:30
+86 Sloth:26
+87 Sloth:30
+88 Sloth:26
+89 Sloth:24
+90 Sloth:30
+91 Sloth:26
+92 Sloth:28
+93 Sloth:34
+94 Sloth:30
+95 Sloth:30
+96 Sloth:32
+97 Sloth:30
+98 Sloth:28
+99 Sloth:30
+100 Sloth:28
+101 Sloth:28
+102 Sloth:26
+103 Sloth:28
+104 Sloth:28
+105 Sloth:30
+106 Sloth:30
+107 Sloth:28
+108 Sloth:30
+109 Sloth:32
+110 Sloth:26
+111 Sloth:30
+112 Sloth:30
+113 Sloth:26
+114 Sloth:30
+115 Sloth:30
+116 Sloth:28
+117 Sloth:30
+118 Sloth:30
+119 Sloth:30
+120 Sloth:28
+121 Sloth:30
+122 Sloth:28
+123 Sloth:30
+124 Sloth:30
+125 Sloth:30
+126 Sloth:28
+127 Sloth:24
+128 Sloth:30
+129 Sloth:30
+130 Sloth:26
+131 Sloth:30
+132 Sloth:30
+133 Sloth:30
+134 Sloth:30
+135 Sloth:30
+136 Sloth:24
+137 Sloth:26
+138 Sloth:22
+139 Sloth:28
+140 Sloth:30
+141 Sloth:30
+142 Sloth:30
+143 Sloth:30
+144 Sloth:28
+145 Sloth:28
+146 Sloth:30
+147 Sloth:26
+148 Sloth:26
+149 Sloth:26
+150 
+150	# current generation
+1	# current convergence
+15000	# number of selections since initialization
+12102	# number of crossovers since initialization
+5719378	# number of mutations since initialization
+15000	# number of replacements since initialization
+15000	# number of genome evaluations since initialization
+151	# number of population evaluations since initialization
+56	# maximum score since initialization
+30	# minimum score since initialization
+50.9084	# average of all scores ('on-line' performance)
+55.52	# average of maximum scores ('off-line' performance)
+49.8067	# average of minimum scores ('off-line' performance)
+
+41.07	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.69097	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+51.96	# mean score in current population
+56	# maximum score in current population
+51	# minimum score in current population
+1.17138	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r1  &=  r3 ;
+ 	 r0  &=  r2 ;
+ 	 r3 = ! r0 ;
+ 	 r2 = ! a0 ;
+ 	 r1  ^=  r0 ;
+ 	 r1  &=  a1 ;
+ 	 r0  &=  b0 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  200 62 41 133 7 90 8 32 113 214 196 136 151 107 20 64 99 210 231 192 88 36 205 62 116 252 91 229 97 21 201 9 104 209 234 88 182 20 10 30 106 87 87 216 220 177 180 81 136 221 226 226 64 65 122 102 45 136 77 81 58 64 173 102 121 198 179 10 226 164 65 161 239 244 221 206 227 11 6 19 228 107 248 79 93 4 99 219 51 37 97 119 171 8 161
+Total length     = 95
+Effective length = 35
+Wrapping events = 0
+Time taken: 0:0:11 -> 0 hours, 0 minutes, 11 seconds.
+11.332
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:40
+Random Seed: 4150642447
+Generations: Sloth:28
+1 Sloth:29
+2 Sloth:24
+3 Sloth:30
+4 Sloth:28
+5 Sloth:28
+6 Sloth:30
+7 Sloth:30
+8 Sloth:30
+9 Sloth:30
+10 Sloth:26
+11 Sloth:28
+12 Sloth:32
+13 Sloth:30
+14 Sloth:30
+15 Sloth:30
+16 Sloth:30
+17 Sloth:30
+18 Sloth:28
+19 Sloth:26
+20 Sloth:30
+21 Sloth:28
+22 Sloth:30
+23 Sloth:28
+24 Sloth:30
+25 Sloth:30
+26 Sloth:30
+27 Sloth:26
+28 Sloth:30
+29 Sloth:22
+30 Sloth:28
+31 Sloth:30
+32 Sloth:30
+33 Sloth:30
+34 Sloth:28
+35 Sloth:28
+36 Sloth:30
+37 Sloth:30
+38 Sloth:30
+39 Sloth:29
+40 Sloth:34
+41 Sloth:30
+42 Sloth:28
+43 Sloth:28
+44 Sloth:26
+45 Sloth:28
+46 Sloth:30
+47 Sloth:30
+48 Sloth:30
+49 Sloth:30
+50 Sloth:28
+51 Sloth:28
+52 Sloth:26
+53 Sloth:28
+54 Sloth:28
+55 Sloth:30
+56 Sloth:30
+57 Sloth:30
+58 Sloth:26
+59 Sloth:30
+60 Sloth:30
+61 Sloth:30
+62 Sloth:30
+63 Sloth:30
+64 Sloth:26
+65 Sloth:28
+66 Sloth:30
+67 Sloth:30
+68 Sloth:28
+69 Sloth:30
+70 Sloth:28
+71 Sloth:30
+72 Sloth:30
+73 Sloth:26
+74 Sloth:24
+75 Sloth:26
+76 Sloth:30
+77 Sloth:22
+78 Sloth:26
+79 Sloth:32
+80 Sloth:26
+81 Sloth:28
+82 Sloth:28
+83 Sloth:30
+84 Sloth:30
+85 Sloth:28
+86 Sloth:30
+87 Sloth:26
+88 Sloth:30
+89 Sloth:30
+90 Sloth:30
+91 Sloth:26
+92 Sloth:28
+93 Sloth:30
+94 Sloth:28
+95 Sloth:30
+96 Sloth:28
+97 Sloth:30
+98 Sloth:30
+99 Sloth:25
+100 Sloth:26
+101 Sloth:26
+102 Sloth:30
+103 Sloth:24
+104 Sloth:28
+105 Sloth:26
+106 Sloth:30
+107 Sloth:30
+108 Sloth:30
+109 Sloth:30
+110 Sloth:26
+111 Sloth:26
+112 Sloth:30
+113 Sloth:28
+114 Sloth:26
+115 Sloth:26
+116 Sloth:30
+117 Sloth:26
+118 Sloth:30
+119 Sloth:28
+120 Sloth:28
+121 Sloth:30
+122 Sloth:30
+123 Sloth:30
+124 Sloth:26
+125 Sloth:30
+126 Sloth:28
+127 Sloth:26
+128 Sloth:28
+129 Sloth:26
+130 Sloth:24
+131 Sloth:28
+132 Sloth:28
+133 Sloth:26
+134 Sloth:28
+135 Sloth:30
+136 Sloth:28
+137 Sloth:26
+138 Sloth:30
+139 Sloth:26
+140 Sloth:30
+141 Sloth:28
+142 Sloth:28
+143 Sloth:26
+144 Sloth:26
+145 Sloth:30
+146 Sloth:24
+147 Sloth:28
+148 Sloth:26
+149 Sloth:28
+150 Sloth:28
+151 Sloth:26
+152 Sloth:27
+153 Sloth:26
+154 Sloth:30
+155 Sloth:30
+156 Sloth:26
+157 Sloth:26
+158 Sloth:26
+159 Sloth:30
+160 Sloth:30
+161 Sloth:26
+162 Sloth:30
+163 Sloth:26
+164 Sloth:26
+165 Sloth:30
+166 Sloth:28
+167 Sloth:28
+168 Sloth:24
+169 Sloth:30
+170 Sloth:30
+171 Sloth:26
+172 Sloth:30
+173 Sloth:22
+174 Sloth:30
+175 Sloth:22
+176 Sloth:28
+177 Sloth:30
+178 Sloth:26
+179 Sloth:30
+180 Sloth:30
+181 Sloth:28
+182 Sloth:30
+183 Sloth:26
+184 Sloth:30
+185 Sloth:26
+186 Sloth:28
+187 Sloth:26
+188 Sloth:30
+189 Sloth:30
+190 Sloth:26
+191 Sloth:30
+192 Sloth:20
+193 Sloth:26
+194 Sloth:24
+195 Sloth:30
+196 Sloth:30
+197 Sloth:26
+198 Sloth:30
+199 Sloth:24
+200 Sloth:28
+201 Sloth:30
+202 Sloth:30
+203 Sloth:26
+204 Sloth:24
+205 Sloth:24
+206 Sloth:26
+207 Sloth:30
+208 Sloth:24
+209 Sloth:30
+210 Sloth:30
+211 Sloth:24
+212 Sloth:30
+213 Sloth:30
+214 Sloth:28
+215 Sloth:30
+216 Sloth:26
+217 Sloth:26
+218 Sloth:28
+219 Sloth:28
+220 Sloth:24
+221 Sloth:24
+222 Sloth:28
+223 Sloth:28
+224 Sloth:28
+225 Sloth:30
+226 Sloth:30
+227 Sloth:28
+228 Sloth:26
+229 Sloth:26
+230 Sloth:30
+231 Sloth:26
+232 Sloth:30
+233 Sloth:30
+234 Sloth:30
+235 Sloth:30
+236 Sloth:30
+237 Sloth:28
+238 Sloth:26
+239 Sloth:28
+240 Sloth:26
+241 Sloth:28
+242 Sloth:30
+243 Sloth:26
+244 Sloth:28
+245 Sloth:28
+246 Sloth:28
+247 Sloth:26
+248 Sloth:30
+249 Sloth:26
+250 
+250	# current generation
+1	# current convergence
+25000	# number of selections since initialization
+20138	# number of crossovers since initialization
+9071386	# number of mutations since initialization
+25000	# number of replacements since initialization
+25000	# number of genome evaluations since initialization
+251	# number of population evaluations since initialization
+56	# maximum score since initialization
+30	# minimum score since initialization
+52.0922	# average of all scores ('on-line' performance)
+54.216	# average of maximum scores ('off-line' performance)
+50.792	# average of minimum scores ('off-line' performance)
+
+41.07	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.69097	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+53.8	# mean score in current population
+56	# maximum score in current population
+52	# minimum score in current population
+0.68165	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r0  &=  r2 ;
+ 	 r1  &=  r2 ;
+ 	 r3  &=  r0 ;
+ 	 r2 = ! b1 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  66 62 196 181 238 170 230 1 37 218 148 216 211 209 180 19 31 146 95 63 168 201 126 48 176 247 78 175 55 88 168 72 213 67 159 253 128 75 32 94 128 47 85 228 154 87 68 38 17 212 195 34 90 156 188 75 39 171 132
+Total length     = 59
+Effective length = 20
+Wrapping events = 0
+Time taken: 0:0:17 -> 0 hours, 0 minutes, 17 seconds.
+17.8827
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Sloth:44
+Random Seed: 2606499518
+Generations: Sloth:38
+1 Sloth:40
+2 Sloth:40
+3 Sloth:42
+4 Sloth:40
+5 Sloth:40
+6 Sloth:40
+7 Sloth:41
+8 Sloth:38
+9 Sloth:40
+10 Sloth:42
+11 Sloth:40
+12 Sloth:42
+13 Sloth:40
+14 Sloth:40
+15 Sloth:40
+16 Sloth:40
+17 Sloth:40
+18 Sloth:42
+19 Sloth:40
+20 Sloth:40
+21 Sloth:40
+22 Sloth:40
+23 Sloth:40
+24 Sloth:42
+25 Sloth:40
+26 Sloth:42
+27 Sloth:40
+28 Sloth:42
+29 Sloth:42
+30 Sloth:42
+31 Sloth:40
+32 Sloth:40
+33 Sloth:42
+34 Sloth:42
+35 Sloth:42
+36 Sloth:42
+37 Sloth:40
+38 Sloth:42
+39 Sloth:42
+40 Sloth:40
+41 Sloth:40
+42 Sloth:42
+43 Sloth:40
+44 Sloth:40
+45 Sloth:40
+46 Sloth:40
+47 Sloth:42
+48 Sloth:38
+49 Sloth:40
+50 Sloth:40
+51 Sloth:40
+52 Sloth:42
+53 Sloth:40
+54 Sloth:42
+55 Sloth:40
+56 Sloth:40
+57 Sloth:40
+58 Sloth:40
+59 Sloth:40
+60 Sloth:40
+61 Sloth:40
+62 Sloth:40
+63 Sloth:39
+64 Sloth:40
+65 Sloth:44
+66 Sloth:42
+67 Sloth:42
+68 Sloth:42
+69 Sloth:40
+70 Sloth:42
+71 Sloth:40
+72 Sloth:41
+73 Sloth:40
+74 Sloth:40
+75 Sloth:40
+76 Sloth:40
+77 Sloth:40
+78 Sloth:42
+79 Sloth:40
+80 Sloth:40
+81 Sloth:41
+82 Sloth:42
+83 Sloth:40
+84 Sloth:40
+85 Sloth:40
+86 Sloth:40
+87 Sloth:42
+88 Sloth:42
+89 Sloth:40
+90 Sloth:40
+91 Sloth:40
+92 Sloth:40
+93 Sloth:40
+94 Sloth:40
+95 Sloth:40
+96 Sloth:40
+97 Sloth:40
+98 Sloth:40
+99 Sloth:40
+100 Sloth:40
+101 Sloth:40
+102 Sloth:40
+103 Sloth:38
+104 Sloth:40
+105 Sloth:42
+106 Sloth:40
+107 Sloth:40
+108 Sloth:40
+109 Sloth:40
+110 Sloth:40
+111 Sloth:38
+112 Sloth:40
+113 Sloth:40
+114 Sloth:40
+115 Sloth:40
+116 Sloth:42
+117 Sloth:40
+118 Sloth:42
+119 Sloth:38
+120 Sloth:40
+121 Sloth:40
+122 Sloth:40
+123 Sloth:40
+124 Sloth:38
+125 Sloth:40
+126 Sloth:42
+127 Sloth:42
+128 Sloth:40
+129 Sloth:42
+130 Sloth:40
+131 Sloth:40
+132 Sloth:40
+133 Sloth:40
+134 Sloth:40
+135 Sloth:40
+136 Sloth:40
+137 Sloth:40
+138 Sloth:40
+139 Sloth:40
+140 Sloth:40
+141 Sloth:42
+142 Sloth:40
+143 Sloth:42
+144 Sloth:40
+145 Sloth:40
+146 Sloth:40
+147 Sloth:42
+148 Sloth:40
+149 Sloth:40
+150 Sloth:40
+151 Sloth:40
+152 Sloth:40
+153 Sloth:40
+154 Sloth:40
+155 Sloth:40
+156 Sloth:40
+157 Sloth:38
+158 Sloth:40
+159 Sloth:40
+160 Sloth:38
+161 Sloth:38
+162 Sloth:40
+163 Sloth:40
+164 Sloth:40
+165 Sloth:40
+166 Sloth:40
+167 Sloth:40
+168 Sloth:40
+169 Sloth:40
+170 Sloth:40
+171 Sloth:42
+172 Sloth:40
+173 Sloth:40
+174 Sloth:40
+175 Sloth:40
+176 Sloth:40
+177 Sloth:40
+178 Sloth:40
+179 Sloth:40
+180 Sloth:40
+181 Sloth:40
+182 Sloth:40
+183 Sloth:40
+184 Sloth:40
+185 Sloth:40
+186 Sloth:40
+187 Sloth:40
+188 Sloth:40
+189 Sloth:40
+190 Sloth:40
+191 Sloth:42
+192 Sloth:38
+193 Sloth:42
+194 Sloth:40
+195 Sloth:40
+196 Sloth:40
+197 Sloth:42
+198 Sloth:40
+199 Sloth:40
+200 Sloth:40
+201 Sloth:40
+202 Sloth:40
+203 Sloth:40
+204 Sloth:40
+205 Sloth:40
+206 Sloth:40
+207 Sloth:40
+208 Sloth:42
+209 Sloth:40
+210 Sloth:42
+211 Sloth:40
+212 Sloth:40
+213 Sloth:40
+214 Sloth:40
+215 Sloth:40
+216 Sloth:40
+217 Sloth:40
+218 Sloth:40
+219 Sloth:40
+220 Sloth:40
+221 Sloth:40
+222 Sloth:40
+223 Sloth:40
+224 Sloth:40
+225 Sloth:40
+226 Sloth:40
+227 Sloth:40
+228 Sloth:42
+229 Sloth:40
+230 Sloth:40
+231 Sloth:40
+232 Sloth:40
+233 Sloth:40
+234 Sloth:40
+235 Sloth:40
+236 Sloth:40
+237 Sloth:40
+238 Sloth:42
+239 Sloth:38
+240 Sloth:40
+241 Sloth:40
+242 Sloth:40
+243 Sloth:40
+244 Sloth:40
+245 Sloth:40
+246 Sloth:40
+247 Sloth:40
+248 Sloth:40
+249 Sloth:40
+250 
+250	# current generation
+1	# current convergence
+25000	# number of selections since initialization
+20112	# number of crossovers since initialization
+10848563	# number of mutations since initialization
+25000	# number of replacements since initialization
+25000	# number of genome evaluations since initialization
+251	# number of population evaluations since initialization
+55	# maximum score since initialization
+30	# minimum score since initialization
+51.8426	# average of all scores ('on-line' performance)
+54.58	# average of maximum scores ('off-line' performance)
+50.58	# average of minimum scores ('off-line' performance)
+
+41.03	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.68278	# standard deviation of initial population
+-1	# diversity of initial population (0=identical,-1=unset)
+
+53.15	# mean score in current population
+55	# maximum score in current population
+52	# minimum score in current population
+0.978299	# standard deviation of current population
+-1	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r0  &=  b0 ;
+ 	 r1 = ! r1 ;
+ 	 r2  ^=  r2 ;
+ 	 r3  |=  a1 ;
+ 	 r3 = ! r1 ;
+ 	 r1  ^=  r2 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  220 17 156 173 58 248 164 153 159 245 38 230 90 26 194 120 59 91 160 153 94 22 55 99 181 229 112 253 126 254 126 86 174 62 99 186 176 97 132 254 134 25 251 36 131 137 14 213 185 253 67 142 97 152 48 60 6 200 160 107 217 114 253 220 193 138 215 63 57 231 86 51 222 127 117 101 127 106 94 72 228 194 201 65 151 17 217 172 157 119 168 142 126 239 37 172 1 185 184 240 3 124 119 86 156 75 118 136 10 163 20 89 244 242 125 187 132 80 154 205 93 70 173 2 164 40 56 117 178 160
+Total length     = 130
+Effective length = 30
+Wrapping events = 0
+Time taken: 0:0:20 -> 0 hours, 0 minutes, 20 seconds.
+20.2542
+Using libGE version 0.32.0
+Using sensible initialisation.
+Using one point crossover.
+Random Seed: 748556778
+Generations: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 
+500	# current generation
+1	# current convergence
+50000	# number of selections since initialization
+40014	# number of crossovers since initialization
+22843708	# number of mutations since initialization
+50000	# number of replacements since initialization
+50000	# number of genome evaluations since initialization
+501	# number of population evaluations since initialization
+57	# maximum score since initialization
+30	# minimum score since initialization
+52.1306	# average of all scores ('on-line' performance)
+55.322	# average of maximum scores ('off-line' performance)
+51.03	# average of minimum scores ('off-line' performance)
+
+40.97	# mean score in initial population
+50	# maximum score in initial population
+30	# minimum score in initial population
+4.60447	# standard deviation of initial population
+170.172	# diversity of initial population (0=identical,-1=unset)
+
+53.89	# mean score in current population
+57	# maximum score in current population
+53	# minimum score in current population
+0.58422	# standard deviation of current population
+128.224	# diversity of current population (0=identical,-1=unset)
+
+20	# how far back to look for convergence
+1	# how often to record scores
+1	# how often to write scores to file
+log/output_data.log	# name of file to which scores are written
+
+Best individual:
+logic [15:0] r0, r1, r2, r3; 
+ always@(*) begin 
+	 r0 = a0; r1 = a1; r2 = b0; r3 = b1; 
+ 	 r1  |=  r1 ;
+ 	 r2 = ! r2 ;
+ 	 r3  ^=  r3 ;
+ 	 r2 = ! r1 ;
+ 	 r0  &=  b0 ;
+ 	 r3 = ! r2 ;
+ 	 r2  |=  r1 ;
+ 	 r2  &=  b1 ;
+ 	 y3 = r3; y2 = r2; y1 = r1; y0 = r0; 
+end
+Genotype =  236 228 185 136 137 100 224 118 211 138 226 230 39 54 155 2 182 54 203 97 88 99 72 153 218 16 14 203 135 242 114 58 202 124 45 195 13 162 73 83 130 105 92 226 185 206 113 84 12 135 21 23 62 228 65 255 93 213 228 78 208 228 203 26 240 87 11 249 211 203 221 7 115 13 208 87 45 16 151 148 245 249 139 140 175 210 204 142 31 102 250 51 122 7 188 160 14 185 174 165 211 98 237 234 150 181 104 56 150 72 194 116 249 60 49 164 61 80 9 41 167 188 98 195 153 232 146 184 175 61 253 64 13 209 207 112 94 80 200 71 145 21 8 248 95 139 120 10 184 215 242 171 147 116 130 68 227 128 124 141 7 231 180 184 128 137 118 167 45 91 241 177 141 225 239 167 137 255 228 72 155 215 23 188 76 150 64 242 227 13 197 151 47 237 40 170 252 10 232 103 224 162 199 87 92 245 50 42 145 255 144 212 15 183 76 250 182 31 159 123 136 13 144 249 175 42 57 14 174 151 18 67 151 104 56 125 10 134 29 208 138 218 40 243 1 102 79 154 26 208 20 101 77 139 41 46 121 137 22 205 120 213 141 64 190 154 171 129 187 68 120 180 69 58 164 155 6 62 20 93 113 140 136 186 9 60 66 25 250 251 125 45 128 207 24 79 55 56 231 66 255 62 163 199 197 255 94 24 240 189 178 42 97 61 133 52 11 129 181 107 59 81 171 65 177 255 134 69 138 153 82 48 11 99 116 153 36 8 66 17 241 176 33 155 87 254 165 169 138 252 199 84 65 238 51 205 91 11 19 184 246 55 173 133 5 148 179 79 23 168 86 31 58 251 255 238 135 163 136 82 223 92 58 229 148 137 149 255 58 69 155 166 87 34 29 211 91 239 19 166 39 132 240 242 91 82 79 75 68 165 189 24 0 44 136 99 5 92 43 75 198 193 131 156 83 179 142 237 110 106 208 128 42 67 83 48 41 30 25 15 237 167
+Total length     = 442
+Effective length = 40
+Wrapping events = 0
+Time taken: 0:1:18 -> 0 hours, 1 minutes, 18 seconds.
+78.1551

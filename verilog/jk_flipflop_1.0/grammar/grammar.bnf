@@ -1,0 +1,3 @@
+<statement>                 ::= "2'b00: q = "<expr>";\n2'b01: q = "<expr>";\n2'b10: q = "<expr>";\n2'b11: q = "<expr>";\n"
+<expr>                      ::= <var>
+<var>                       ::= "0" | "1" | "q" | "~q"
