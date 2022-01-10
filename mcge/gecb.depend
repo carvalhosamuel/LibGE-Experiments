@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1600655539 source:/home/douglas/libGE/libge-examples-master/cpp/gecb/GEspiral.c
+	<math.h>
+
+1613225973 source:/home/douglas/libGE/libge-examples-master/cpp/gecb/individual.c
+	"GEspiral.h"
+	<math.h>
+	<stdio.h>
+
+1600655539 /home/douglas/libGE/libge-examples-master/cpp/gecb/GEspiral.h
+
+1600655539 source:/home/douglas/libGE/libge-examples-master/cpp/gecb/initfunc.cpp
+	<GE/ge.h>
+	<ga/ga.h>
+
+1600655539 source:/home/douglas/libGE/libge-examples-master/cpp/gecb/main.cpp
+	<GE/ge.h>
+	<ga/ga.h>
+	<iostream>
+	<string>
+	<chrono>
+	<omp.h>
+
+1600655539 source:/home/douglas/libGE/libge-examples-master/cpp/gecb/spiral-gcc.cpp
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<GE/ge.h>
+	<ga/ga.h>
+

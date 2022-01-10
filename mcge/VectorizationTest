@@ -1,0 +1,52 @@
+
+
+InterwinedSpiral example
+Vectorization in Makefiles
+1) Libge Makefile
+2) Spirals Makefile
+using the following parameters:
+popsize = 100, ngen = 100
+
+
+1st experiment:
+---------------
+Libge Makefile		= without vectorization
+Spirals Makefile: 	
+	CFLAGS 					= with vectorization
+	CXXFLAGS				= without vectorization
+Time taken:				= 5.8755 
+
+Time taken:				= 2.6928 
+2nd experiment:
+---------------
+Libge Makefile		= with vectorization
+Spirals Makefile: 	
+	CFLAGS 					= with vectorization
+	CXXFLAGS				= without vectorization
+Time taken:				= 4.8282
+
+
+3rd experiment:
+---------------
+
+Libge Makefile		= without vectorization
+Spirals Makefile: 	
+	CFLAGS 					= with vectorization
+	CXXFLAGS				= with vectorization
+Time taken:				= 3.6387
+
+
+4th experiment:
+---------------
+Libge Makefile		= with vectorization
+Spirals Makefile: 	
+	CFLAGS 					= with vectorization
+	CXXFLAGS				= with vectorization
+Time taken:				= 2.6928 
+
+
+
+
+
+
+
