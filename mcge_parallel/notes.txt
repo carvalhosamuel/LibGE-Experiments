@@ -1,0 +1,11 @@
+./GEGCC min 40 max 50  wrap 100 popsize 500 ngen 500 pmut 0.1 pcross 0.8 seed 1
+
+00000000001E0000 4C 8B 07             mov         r8,qword ptr [rdi]  
+00000000001E0003 4C 8B 4F 08          mov         r9,qword ptr [rdi+8]  
+00000000001E0007 4C 33 4F 10          xor         r9,qword ptr [rdi+10h]  
+00000000001E000B 4C 33 47 08          xor         r8,qword ptr [rdi+8]  
+00000000001E000F 4D 0B C8             or          r9,r8  
+00000000001E0012 4C 33 47 10          xor         r8,qword ptr [rdi+10h]  
+00000000001E0016 4D 33 C8             xor         r9,r8  
+00000000001E0019 4C 89 07             mov         qword ptr [rdi],r8  
+00000000001E001C 4C 89 4F 08          mov         qword ptr [rdi+8],r9

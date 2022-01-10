@@ -1,0 +1,17 @@
+<prog> ::= <header> <body> <footer>
+<header> ::= "4C8B074C8B4F084C"
+<body> ::= <line> <body> | <line>
+<footer> ::= "4C89074C894F08C3"
+
+<line> ::= <not> | <instr_reg> | <instr_mem>
+
+<not>  ::= "49F7" <not_reg>
+<not_reg> ::= "D0" | "D1"
+
+<instr_reg>  ::= "4D" <op> <reg_reg>
+<instr_mem>  ::= "4C" <op> <reg> <mem> | "4C" <op> <reg_mem0>
+<op> ::= "23" | "0B" | "33"
+<reg_reg> ::= "C1" | "C8"
+<reg> ::= "47" | "4F"
+<mem> ::= "08" | "10"
+<reg_mem0> ::= "07" | "0F"
